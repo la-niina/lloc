@@ -72,6 +72,18 @@ export const Content = () => (
                         isBlurred
                         css={{ color: "#94f9f0", bg: "#94f9f026" }}>
                         <Grid>
+                            <Row justify="flex-start">
+                                <Text
+                                    h1
+                                    size={20}
+                                    css={{
+                                        textGradient: "45deg, $blue600 -20%, $pink600 50%",
+                                    }}
+                                    weight="bold"
+                                >
+                                    Let's
+                                </Text>
+                            </Row>
                             <Row justify="center">
                                 <Text size="sm">
                                     Some quick example text to build on the card title and make up the
@@ -107,6 +119,18 @@ export const Content = () => (
                         isBlurred
                         css={{ color: "#94f9f0", bg: "#94f9f026" }}>
                         <Grid>
+                            <Row justify="flex-start">
+                                <Text
+                                    h1
+                                    size={20}
+                                    css={{
+                                        textGradient: "45deg, $blue600 -20%, $pink600 50%",
+                                    }}
+                                    weight="bold"
+                                >
+                                    Let's
+                                </Text>
+                            </Row>
                             <Row justify="center">
                                 <Text size="sm">
                                     Some quick example text to build on the card title and make up the
@@ -142,6 +166,18 @@ export const Content = () => (
                         isBlurred
                         css={{ color: "#94f9f0", bg: "#94f9f026" }}>
                         <Grid>
+                            <Row justify="flex-start">
+                                <Text
+                                    h1
+                                    size={20}
+                                    css={{
+                                        textGradient: "45deg, $blue600 -20%, $pink600 50%",
+                                    }}
+                                    weight="bold"
+                                >
+                                    Let's
+                                </Text>
+                            </Row>
                             <Row justify="center">
                                 <Text size="sm">
                                     Some quick example text to build on the card title and make up the
@@ -177,6 +213,18 @@ export const Content = () => (
                         isBlurred
                         css={{ color: "#94f9f0", bg: "#94f9f026" }}>
                         <Grid>
+                            <Row justify="flex-start">
+                                <Text
+                                    h1
+                                    size={20}
+                                    css={{
+                                        textGradient: "45deg, $blue600 -20%, $pink600 50%",
+                                    }}
+                                    weight="bold"
+                                >
+                                    Let's
+                                </Text>
+                            </Row>
                             <Row justify="center">
                                 <Text size="sm">
                                     Some quick example text to build on the card title and make up the
@@ -212,6 +260,18 @@ export const Content = () => (
                         isBlurred
                         css={{ color: "#94f9f0", bg: "#94f9f026" }}>
                         <Grid>
+                            <Row justify="flex-start">
+                                <Text
+                                    h1
+                                    size={20}
+                                    css={{
+                                        textGradient: "45deg, $blue600 -20%, $pink600 50%",
+                                    }}
+                                    weight="bold"
+                                >
+                                    Let's
+                                </Text>
+                            </Row>
                             <Row justify="center">
                                 <Text size="sm">
                                     Some quick example text to build on the card title and make up the
