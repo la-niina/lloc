@@ -58,7 +58,7 @@ export default function Liences() {
                         enableCursorHighlight
                         activeColor="secondary"
                         hideIn="xs"
-                        variant="highlight-rounded|underline"
+                        variant="highlight-rounded"
                     >
                         <Navbar.Link href="/">features</Navbar.Link>
                         <Navbar.Link href="/customers">
@@ -66,59 +66,6 @@ export default function Liences() {
                         </Navbar.Link>
                         <Navbar.Link href="/concepts">concepts</Navbar.Link>
                         <Navbar.Link isActive href="/liences">liences</Navbar.Link>
-                        <Dropdown isBordered>
-                            <Navbar.Item>
-                                <Dropdown.Button
-                                    auto
-                                    light
-                                    css={{
-                                        width: '5%',
-                                        px: 0,
-                                        dflex: "center",
-                                        svg: { pe: "none" },
-                                    }}
-                                    iconRight={icons.chevron}
-                                    ripple={false}
-                                >
-                                    Features
-                                </Dropdown.Button>
-                            </Navbar.Item>
-                            <Dropdown.Menu
-                                aria-label="ACME features"
-                                css={{
-                                    $$dropdownMenuWidth: "340px",
-                                    $$dropdownItemHeight: "70px",
-                                    "& .nextui-dropdown-item": {
-                                        py: "$4",
-                                        // dropdown item left icon
-                                        svg: {
-                                            color: "$secondary",
-                                            mr: "$4",
-                                        },
-                                        // dropdown item title
-                                        "& .nextui-dropdown-item-content": {
-                                            w: "100%",
-                                            fontWeight: "$semibold",
-                                        },
-                                    },
-                                }}
-                            >
-                                <Dropdown.Item
-                                    key="autoscaling"
-                                    showFullDescription
-                                    description="ACME scales apps to meet user demand, automagically, based on load."
-                                >
-                                    Autoscaling
-                                </Dropdown.Item>
-                                <Dropdown.Item
-                                    key="usage_metrics"
-                                    showFullDescription
-                                    description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-                                >
-                                    Usage Metrics
-                                </Dropdown.Item>
-                            </Dropdown.Menu>
-                        </Dropdown>
                         <Navbar.Link href="/about">about</Navbar.Link>
                     </Navbar.Content>
 
