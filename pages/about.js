@@ -14,7 +14,7 @@ export default function About() {
     const collapseItems = [
         "features",
         "customers",
-        "concepts",
+        "blog",
         "liencies",
         "about",
     ];
@@ -63,7 +63,7 @@ export default function About() {
                         <Navbar.Link href="/customers">
                             customers
                         </Navbar.Link>
-                        <Navbar.Link href="/concepts">concepts</Navbar.Link>
+                        <Navbar.Link href="/blog">blog</Navbar.Link>
                         <Navbar.Link href="/liences">liences</Navbar.Link>
                         <Navbar.Link isActive href="/about">about</Navbar.Link>
                     </Navbar.Content>

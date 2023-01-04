@@ -2,14 +2,13 @@ import Head from 'next/head'
 import React from "react";
 import { Inter } from '@next/font/google'
 import { Navbar, Button, Link, Image, Text, useTheme, Avatar, Dropdown, Modal, Input, Row, Checkbox } from "@nextui-org/react";
-import { Layout } from "../compose/liences/LiencesLayout.js";
+import { Layout } from "../compose/Blogs/BlogsLayout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
-import { icons } from "../compose/Icons.js";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Liences() {
+export default function Blog() {
     const { isDark } = useTheme();
 
     const collapseItems = [
@@ -64,8 +63,8 @@ export default function Liences() {
                         <Navbar.Link href="/customers">
                             customers
                         </Navbar.Link>
-                        <Navbar.Link href="/blog">blog</Navbar.Link>
-                        <Navbar.Link isActive href="/liences">liences</Navbar.Link>
+                        <Navbar.Link isActive href="/blog">blog</Navbar.Link>
+                        <Navbar.Link href="/liences">liences</Navbar.Link>
                         <Navbar.Link href="/about">about</Navbar.Link>
                     </Navbar.Content>
 
