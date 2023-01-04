@@ -76,7 +76,7 @@ export default function Liences() {
                             </Button>
                         </Navbar.Item>
                     </Navbar.Content>
-
+                    
                     <Modal
                         closeButton
                         preventClose

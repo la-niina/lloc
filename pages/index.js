@@ -59,8 +59,8 @@ export default function Home() {
             hideIn="xs"
             variant="highlight-rounded"
           >
-            <Navbar.Link href="/">features</Navbar.Link>
-            <Navbar.Link isActive href="/customers">
+            <Navbar.Link isActive href="/">features</Navbar.Link>
+            <Navbar.Link href="/customers">
               customers
             </Navbar.Link>
             <Navbar.Link href="/concepts">concepts</Navbar.Link>
