@@ -36,7 +36,6 @@ export default function About() {
             </Head>
             <Layout>
                 <Navbar isCompact isBordered={isDark} variant="sticky">
-                    <Navbar.Toggle showIn="xs" />
                     <Navbar.Brand
                         css={{
                             "@xs": {
@@ -47,10 +46,10 @@ export default function About() {
                         <Image
                             width={30}
                             height={30}
+                            onClick={() => {
+                                window.location.href = "/"
+                            }}
                             src='/logo.svg' />
-                        <Text b color="inherit" hideIn="xs">
-                            IIo
-                        </Text>
                     </Navbar.Brand>
 
                     <Navbar.Content
@@ -67,7 +66,7 @@ export default function About() {
                         <Navbar.Link href="/liences">liences</Navbar.Link>
                         <Navbar.Link isActive href="/about">about</Navbar.Link>
                     </Navbar.Content>
-
+                    <Navbar.Toggle showIn="xs" />
                     <Navbar.Content>
                         <Navbar.Item>
                             <Button auto flat as={Link} onClick={handler}>
@@ -75,7 +74,7 @@ export default function About() {
                             </Button>
                         </Navbar.Item>
                     </Navbar.Content>
-                    
+
                     <Modal
                         closeButton
                         preventClose

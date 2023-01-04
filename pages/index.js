@@ -36,7 +36,6 @@ export default function Home() {
       </Head>
       <Layout>
         <Navbar isCompact isBordered={isDark} variant="sticky">
-          <Navbar.Toggle showIn="xs" />
           <Navbar.Brand
             css={{
               "@xs": {
@@ -47,10 +46,10 @@ export default function Home() {
             <Image
               width={30}
               height={30}
+              onClick={() => {
+                window.location.href = "/"
+              }}
               src='/logo.svg' />
-            <Text b color="inherit" hideIn="xs">
-              IIo
-            </Text>
           </Navbar.Brand>
 
           <Navbar.Content
@@ -67,6 +66,8 @@ export default function Home() {
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
           </Navbar.Content>
+
+          <Navbar.Toggle showIn="xs" />
 
           <Navbar.Content>
             <Navbar.Item>
@@ -129,26 +130,26 @@ export default function Home() {
           </Modal>
 
           <Navbar.Collapse>
-            {collapseItems.map((item, index) => (
-              <Navbar.CollapseItem
-                key={item}
-                activeColor="secondary"
-                css={{
-                  color: index === collapseItems.length - 1 ? "$error" : "",
-                }}
-                isActive={index === 2}
-              >
-                <Link
-                  color="inherit"
-                  css={{
-                    minWidth: "100%",
-                  }}
-                  href="#"
-                >
-                  {item}
-                </Link>
-              </Navbar.CollapseItem>
-            ))}
+          {collapseItems.map((item, index) => (
+                            <Navbar.CollapseItem
+                                key={item}
+                                activeColor="secondary"
+                                css={{
+                                    color: index === collapseItems.length - 1 ? "$error" : "",
+                                }}
+                                isActive={index === 2}
+                            >
+                                <Link
+                                    color="inherit"
+                                    css={{
+                                        minWidth: "100%",
+                                    }}
+                                    href="#"
+                                >
+                                    {item}
+                                </Link>
+                            </Navbar.CollapseItem>
+                        ))}
           </Navbar.Collapse>
         </Navbar>
       </Layout>

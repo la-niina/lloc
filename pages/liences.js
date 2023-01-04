@@ -37,7 +37,6 @@ export default function Liences() {
             </Head>
             <Layout>
                 <Navbar isCompact isBordered={isDark} variant="sticky">
-                    <Navbar.Toggle showIn="xs" />
                     <Navbar.Brand
                         css={{
                             "@xs": {
@@ -48,10 +47,10 @@ export default function Liences() {
                         <Image
                             width={30}
                             height={30}
+                            onClick={() => {
+                                window.location.href = "/"
+                            }}
                             src='/logo.svg' />
-                        <Text b color="inherit" hideIn="xs">
-                            IIo
-                        </Text>
                     </Navbar.Brand>
 
                     <Navbar.Content
@@ -68,7 +67,7 @@ export default function Liences() {
                         <Navbar.Link isActive href="/liences">liences</Navbar.Link>
                         <Navbar.Link href="/about">about</Navbar.Link>
                     </Navbar.Content>
-
+                    <Navbar.Toggle showIn="xs" />
                     <Navbar.Content>
                         <Navbar.Item>
                             <Button auto flat as={Link} onClick={handler}>
@@ -76,7 +75,7 @@ export default function Liences() {
                             </Button>
                         </Navbar.Item>
                     </Navbar.Content>
-                    
+
                     <Modal
                         closeButton
                         preventClose
