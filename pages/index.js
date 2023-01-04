@@ -51,12 +51,12 @@ export default function Home() {
               hideIn="xs"
               variant="highlight-rounded"
             >
-              <Navbar.Link href="#">Features</Navbar.Link>
+              <Navbar.Link href="#">features</Navbar.Link>
               <Navbar.Link isActive href="#">
-                Customers
+                customers
               </Navbar.Link>
-              <Navbar.Link href="#">Pricing</Navbar.Link>
-              <Navbar.Link href="#">Company</Navbar.Link>
+              <Navbar.Link href="#">concepts</Navbar.Link>
+              <Navbar.Link href="#">about</Navbar.Link>
             </Navbar.Content>
             <Navbar.Content
               css={{
