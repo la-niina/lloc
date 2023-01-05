@@ -24,6 +24,7 @@ const list = [
     price: "$10.00",
   },
 ];
+
 export const Content = () => (
   <>
     <Container>
