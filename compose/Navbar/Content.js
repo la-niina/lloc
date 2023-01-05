@@ -1,30 +1,142 @@
-import { Container, Text, Spacer, Grid, Card, Col, Row, Button, Loading } from "@nextui-org/react"
+import { Container, Input, Text, Spacer, Grid, Card, Col, Row, Button, Loading } from "@nextui-org/react"
 import { Box } from "./Box.js"
+import { SendButton } from "./Card/SendButton";
+import { SendIcon } from "./Card/SendIcon";
 import { Card1 } from './Card/Card1';
 import { Card2 } from './Card/Card2';
 import { Card3 } from './Card/Card3';
 import { Card4 } from './Card/Card4';
 import { Card5 } from './Card/Card5';
-
+const list = [
+  {
+    title: "Orange",
+    img: "/images/fruit-1.jpeg",
+    price: "$5.50",
+  },
+  {
+    title: "Tangerine",
+    img: "/images/fruit-2.jpeg",
+    price: "$3.00",
+  },
+  {
+    title: "Cherry",
+    img: "/images/fruit-3.jpeg",
+    price: "$10.00",
+  },
+];
 export const Content = () => (
   <>
-    <Grid.Container gap={2} justify="center">
-      <Grid xs={12} sm={4}>
-        <Card1 />
-      </Grid>
-      <Grid xs={12} sm={4}>
-        <Card2 />
-      </Grid>
-      <Grid xs={12} sm={4}>
-        <Card3 />
-      </Grid>
-      <Grid xs={12} sm={5}>
-        <Card4 />
-      </Grid>
-      <Grid xs={12} sm={7}>
-        <Card5 />
-      </Grid>
-    </Grid.Container>
+    <Container>
+      <Grid.Container gap={2} justify="flex-start">
+        <Grid>
+          <Row justify="center">
+            <Text h1>
+              Make <a css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>beautiful</a> websites
+              <br />regardless of your design
+              <br />experience.
+            </Text>
+          </Row>
+
+          <Row justify="flex-start">
+            <Text weight="bold">
+              Beautiful, fast and modern React UI library.
+            </Text>
+          </Row>
+
+          <Spacer y={1} />
+
+          <Grid.Container>
+            <Grid xs={12} md={6} wrap='wrap'>
+              <Button auto color="primary" rounded css={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                marginBottom: "10px"
+              }}>
+                Get Started
+              </Button>
+            </Grid>
+
+            <Grid xs={12} md={6}>
+              <Input
+                bordered
+                labelLeft="https://"
+                labelRight=".app"
+                placeholder="iiio.vercel"
+                contentRight={
+                  <SendButton>
+                    <SendIcon />
+                  </SendButton>
+                }
+              />
+            </Grid>
+          </Grid.Container>
+        </Grid>
+
+
+        <Grid xs={12} sm={6} justify="flex-end" alignContent="center" alignItems="center">
+          <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center" 
+          css={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginBottom: "10px"
+          }}>
+            {list.map((item, index) => (
+              <Grid xs={6} sm={4} key={index} css={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                marginBottom: "10px"
+              }}>
+                <Card isPressable>
+                  <Card.Body css={{ p: 0 }}>
+                    <Card.Image
+                      src={"https://nextui.org" + item.img}
+                      objectFit="cover"
+                      width="100%"
+                      height={140}
+                      alt={item.title}
+                    />
+                  </Card.Body>
+                  <Card.Footer css={{ justifyItems: "flex-start" }}>
+                    <Row wrap="wrap" justify="space-between" align="center">
+                      <Text b>{item.title}</Text>
+                      <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                        {item.price}
+                      </Text>
+                    </Row>
+                  </Card.Footer>
+                </Card>
+              </Grid>
+            ))}
+          </Grid.Container>
+        </Grid>
+
+
+      </Grid.Container>
+    </Container>
+
+    <Container>
+      <Grid.Container gap={2} justify="center">
+        <Grid xs={12} sm={4}>
+          <Card1 />
+        </Grid>
+        <Grid xs={12} sm={4}>
+          <Card2 />
+        </Grid>
+        <Grid xs={12} sm={4}>
+          <Card3 />
+        </Grid>
+        <Grid xs={12} sm={5}>
+          <Card4 />
+        </Grid>
+        <Grid xs={12} sm={7}>
+          <Card5 />
+        </Grid>
+      </Grid.Container>
+
+    </Container>
 
     <Container
       css={{
