@@ -9,7 +9,7 @@ export const Content = () => (
         <Grid.Container gap={2}>
             <Grid>
                 <Collapse.Group shadow>
-                    <Collapse  weight="bold"  css={{textGradient: "45deg, $purple600 -20%, $pink600 100%"}} title="Anchor" arrowIcon={<AnchorIcon />}>
+                    <Collapse  weight="bold"  css={{textGradient: "45deg, $purple600 -20%, $pink600 100%"}} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
                         <Text>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -17,7 +17,7 @@ export const Content = () => (
                             nisi ut aliquip ex ea commodo consequat.
                         </Text>
                     </Collapse>
-                    <Collapse title="Moon" arrowIcon={<MoonIcon />}>
+                    <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
                         <Text>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -25,7 +25,7 @@ export const Content = () => (
                             nisi ut aliquip ex ea commodo consequat.
                         </Text>
                     </Collapse>
-                    <Collapse title="Sun" arrowIcon={<SunIcon />}>
+                    <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
                         <Text>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
