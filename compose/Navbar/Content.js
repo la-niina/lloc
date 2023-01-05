@@ -1,4 +1,4 @@
-import { Container, Input, Text, Spacer, Grid, Card, Col, Row, Button, Loading } from "@nextui-org/react"
+import { Container, Input, Text, User, Spacer, Grid, Card, Col, Row, Button, Loading } from "@nextui-org/react"
 import { Box } from "./Box.js"
 import { SendButton } from "./Card/SendButton";
 import { SendIcon } from "./Card/SendIcon";
@@ -114,40 +114,53 @@ export const Content = () => (
           </Grid.Container>
         </Grid>
 
-
       </Grid.Container>
     </Container>
 
     <Container>
-      <Grid.Container gap={1}>
-        <Grid xs={3} sm={3}>
-          <Card variant="flat">
-            <Card.Body>
-              <Text>Default card. (shadow)</Text>
-            </Card.Body>
-          </Card>
+
+      <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center">
+        <Grid>
+          <User
+            src="/kotlin.svg"
+            name="Kotlin"
+            size="lg"
+            squared
+          />
         </Grid>
-        <Grid xs={3} sm={3}>
-          <Card variant="flat">
-            <Card.Body>
-              <Text>Flat card.</Text>
-            </Card.Body>
-          </Card>
+        <Grid>
+          <User
+            src="/java.svg"
+            name="Java"
+            size="lg"
+            squared
+          />
         </Grid>
-        <Grid xs={3} sm={3}>
-          <Card variant="flat">
-            <Card.Body>
-              <Text>Bordered card.</Text>
-            </Card.Body>
-          </Card>
+        <Grid>
+          <User
+            src="/golang.svg"
+            name="Golang"
+            size="lg"
+            squared
+          />
         </Grid>
-        <Grid xs={3} sm={3}>
-          <Card variant="flat">
-            <Card.Body>
-              <Text>Bordered card.</Text>
-            </Card.Body>
-          </Card>
+        <Grid>
+          <User
+            src="/nextjs.svg"
+            name="Next.Js"
+            size="lg"
+            squared
+          />
         </Grid>
+        <Grid>
+          <User
+            src="/android.svg"
+            name="Android"
+            size="lg"
+            squared
+          />
+        </Grid>
+
       </Grid.Container>
     </Container>
 

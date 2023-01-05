@@ -132,23 +132,23 @@ export default function Home() {
           <Navbar.Collapse>
 
             <Navbar.CollapseItem>
-              <Link href="/">features</Link>
+              <Link weight="bold" css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }} href="/">features</Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link href="/community">community</Link>
+              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%"}} href="/community">community</Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link href="/blog">blog</Link>
+              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/blog">blog</Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link href="/liences">liences</Link>
+              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/liences">liences</Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link href="/about">about</Link>
+              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/about">about</Link>
             </Navbar.CollapseItem>
 
           </Navbar.Collapse>
