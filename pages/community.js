@@ -128,26 +128,25 @@ export default function Community() {
                     </Modal>
 
                     <Navbar.Collapse>
-                        {collapseItems.map((item, index) => (
-                            <Navbar.CollapseItem
-                                key={item}
-                                activeColor="secondary"
-                                css={{
-                                    color: index === collapseItems.length - 1 ? "$error" : "",
-                                }}
-                                isActive={index === 2}
-                            >
-                                <Link
-                                    color="inherit"
-                                    css={{
-                                        minWidth: "100%",
-                                    }}
-                                    href="#"
-                                >
-                                    {item}
-                                </Link>
-                            </Navbar.CollapseItem>
-                        ))}
+                        <Navbar.CollapseItem>
+                            <Link href="/">features</Link>
+                        </Navbar.CollapseItem>
+
+                        <Navbar.CollapseItem>
+                            <Link href="/community">community</Link>
+                        </Navbar.CollapseItem>
+
+                        <Navbar.CollapseItem>
+                            <Link href="/blog">blog</Link>
+                        </Navbar.CollapseItem>
+
+                        <Navbar.CollapseItem>
+                            <Link href="/liences">liences</Link>
+                        </Navbar.CollapseItem>
+
+                        <Navbar.CollapseItem>
+                            <Link href="/about">about</Link>
+                        </Navbar.CollapseItem>
                     </Navbar.Collapse>
                 </Navbar>
             </Layout>
