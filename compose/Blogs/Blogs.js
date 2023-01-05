@@ -2,10 +2,11 @@ import { Container, Card, Row, Text, Spacer, Image, Grid, Button, Loading, Col }
 import { Box } from "./Box.js"
 
 export const Content = () => (
-    <Box css={{ px: "$12", mt: "$8", "@xsMax": { px: "$10" } }}>
-        <Grid.Container gap={1} justify="flex-start">
+    <>
+        <Grid.Container gap={1} justify="space-evenly">
             <Grid>
-                <Card isPressable css={{ mw: "300px" }}>
+                <Card isPressable 
+                css={{ mw: "300px" }}>
                     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
                         <Col>
                             <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
@@ -23,7 +24,7 @@ export const Content = () => (
 
                     <Card.Footer
                         isBlurred
-                        css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                        css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5 }}>
                         <Grid>
                             <Row justify="flex-start">
                                 <Text
@@ -70,7 +71,7 @@ export const Content = () => (
 
                     <Card.Footer
                         isBlurred
-                        css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                        css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5 }}>
                         <Grid>
                             <Row justify="flex-start">
                                 <Text
@@ -117,7 +118,7 @@ export const Content = () => (
 
                     <Card.Footer
                         isBlurred
-                        css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                        css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5 }}>
                         <Grid>
                             <Row justify="flex-start">
                                 <Text
@@ -164,7 +165,7 @@ export const Content = () => (
 
                     <Card.Footer
                         isBlurred
-                        css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                        css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5 }}>
                         <Grid>
                             <Row justify="flex-start">
                                 <Text
@@ -211,7 +212,7 @@ export const Content = () => (
 
                     <Card.Footer
                         isBlurred
-                        css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                        css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5 }}>
                         <Grid>
                             <Row justify="flex-start">
                                 <Text
@@ -258,7 +259,7 @@ export const Content = () => (
 
                     <Card.Footer
                         isBlurred
-                        css={{ color: "#94f9f0", bg: "#94f9f026" }}>
+                        css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5 }}>
                         <Grid>
                             <Row justify="flex-start">
                                 <Text
@@ -286,8 +287,7 @@ export const Content = () => (
                 </Card>
             </Grid>
         </Grid.Container>
-
         <Spacer y={1} />
         <Spacer y={1} />
-    </Box>
+        </>
 );

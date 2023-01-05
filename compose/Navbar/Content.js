@@ -54,7 +54,6 @@ export const Content = () => (
               onClick={() => {
                 window.location.href = "https://github.com/la-niina"
               }}
-              isBlurred
               css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, }}>
               <Card.Header>
                 <img
@@ -84,7 +83,6 @@ export const Content = () => (
           <Grid xs={12} sm={4}>
             <Card
               isPressable
-              isBlurred
               onClick={() => {
                 window.location.href = "https://twitter.com/la_nniina"
               }}
@@ -119,7 +117,6 @@ export const Content = () => (
           <Grid xs={12} sm={4}>
             <Card
               isPressable
-              isBlurred
               css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, }}>
               <Card.Header>
                 <img
