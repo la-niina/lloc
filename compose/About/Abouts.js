@@ -56,12 +56,11 @@ export const Content = () => (
                 </Grid>
 
 
-                <Grid xs={12} sm={6} justify="flex-end" alignContent="center" alignItems="center">
-                    <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center"
+                <Grid xs={12} sm={6} justify="flex-end" alignContent="center">
+                    <Grid.Container gap={1} justify="center" alignContent="center"
                         css={{
                             display: "flex",
                             justifyContent: "center",
-                            alignItems: "center",
                             marginBottom: "10px"
                         }}>
                         {list.map((item, index) => (

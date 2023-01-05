@@ -51,7 +51,6 @@ export const Content = () => (
               <Button auto color="primary" rounded css={{
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
                 marginBottom: "10px"
               }}>
                 Get Started
@@ -75,19 +74,17 @@ export const Content = () => (
         </Grid>
 
 
-        <Grid xs={12} sm={6} justify="flex-end" alignContent="center" alignItems="center">
-          <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center"
+        <Grid xs={12} sm={6} justify="flex-end" alignContent="center">
+          <Grid.Container gap={1} justify="center" alignContent="center"
             css={{
               display: "flex",
               justifyContent: "center",
-              alignItems: "center",
               marginBottom: "10px"
             }}>
             {list.map((item, index) => (
               <Grid xs={6} sm={4} key={index} css={{
                 display: "flex",
                 justifyContent: "center",
-                alignItems: "center",
                 marginBottom: "10px"
               }}>
                 <Card isPressable>
@@ -119,7 +116,7 @@ export const Content = () => (
 
     <Container>
 
-      <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center">
+      <Grid.Container gap={1} justify="center" alignContent="center">
         <Grid>
           <User
             src="/kotlin.svg"
@@ -189,7 +186,6 @@ export const Content = () => (
       css={{
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
       }}>
 
       <Grid justify="center">
@@ -199,7 +195,7 @@ export const Content = () => (
           </Text>
         </Row>
         <Row justify="center">
-          <Text justify="center" alignItems="center">
+          <Text justify="center">
             Get involved in our community. Everyone is welcome!
           </Text>
         </Row>

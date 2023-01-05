@@ -76,7 +76,7 @@ export const Content = () => (
     <>
         <Container>
             <Grid.Container gap={2} justify="flex-start">
-                <Grid xs={12} sm={9} justify="flex-end" alignContent="center" alignItems="center">
+                <Grid xs={12} sm={9} justify="flex-end" alignContent="center">
                     <Collapse.Group shadow>
                         <Grid>
                             <Grid.Container gap={1} justify="flex-start">
