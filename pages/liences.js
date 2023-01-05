@@ -14,7 +14,7 @@ export default function Liences() {
 
     const collapseItems = [
         "features",
-        "customers",
+        "community",
         "blog",
         "liencies",
         "about",
@@ -60,8 +60,8 @@ export default function Liences() {
                         variant="highlight-rounded"
                     >
                         <Navbar.Link href="/">features</Navbar.Link>
-                        <Navbar.Link href="/customers">
-                            customers
+                        <Navbar.Link href="/community">
+                            community
                         </Navbar.Link>
                         <Navbar.Link href="/blog">blog</Navbar.Link>
                         <Navbar.Link isActive href="/liences">liences</Navbar.Link>

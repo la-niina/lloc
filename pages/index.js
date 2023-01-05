@@ -13,7 +13,7 @@ export default function Home() {
 
   const collapseItems = [
     "features",
-    "customers",
+    "community",
     "blog",
     "liencies",
     "about",
@@ -59,8 +59,8 @@ export default function Home() {
             variant="highlight-rounded"
           >
             <Navbar.Link isActive href="/">features</Navbar.Link>
-            <Navbar.Link href="/customers">
-              customers
+            <Navbar.Link href="/community">
+              community
             </Navbar.Link>
             <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>

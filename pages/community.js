@@ -1,14 +1,14 @@
 import Head from 'next/head'
 import React from "react";
 import { Inter } from '@next/font/google'
-import { Navbar, Button, useModal, Link, Image, Text, useTheme, Avatar, Dropdown, Modal, Input, Row, Checkbox } from "@nextui-org/react";
-import { Layout } from "../compose/Blogs/BlogsLayout.js";
+import { Navbar, Button, Link, Image, Text, useTheme, Avatar, Dropdown, Modal, Input, Row, Checkbox } from "@nextui-org/react";
+import { Layout } from "../compose/Community/CommunityLayout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Blog() {
+export default function Community() {
     const { isDark } = useTheme();
 
     const collapseItems = [
@@ -59,14 +59,13 @@ export default function Blog() {
                         variant="highlight-rounded"
                     >
                         <Navbar.Link href="/">features</Navbar.Link>
-                        <Navbar.Link href="/community">
+                        <Navbar.Link isActive href="/community">
                             community
                         </Navbar.Link>
-                        <Navbar.Link isActive href="/blog">blog</Navbar.Link>
+                        <Navbar.Link href="/blog">blog</Navbar.Link>
                         <Navbar.Link href="/liences">liences</Navbar.Link>
                         <Navbar.Link href="/about">about</Navbar.Link>
                     </Navbar.Content>
-
                     <Navbar.Toggle showIn="xs" />
                     <Navbar.Content>
                         <Navbar.Item>
