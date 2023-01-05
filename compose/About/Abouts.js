@@ -31,7 +31,7 @@ export const Content = () => (
                     textGradient: "45deg, $blue600 -20%, $pink600 50%",
                     margin: "10px"
                 }}
-                weight="bold">About IIo</Text>
+                weight="bold">About</Text>
         </Container>
 
         <Container>
@@ -52,33 +52,7 @@ export const Content = () => (
                     </Row>
 
                     <Spacer y={1} />
-
-                    <Grid.Container>
-                        <Grid xs={12} md={6} wrap='wrap'>
-                            <Button auto color="primary" rounded css={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                marginBottom: "10px"
-                            }}>
-                                Get Started
-                            </Button>
-                        </Grid>
-
-                        <Grid xs={12} md={6}>
-                            <Input
-                                bordered
-                                labelLeft="https://"
-                                labelRight=".app"
-                                placeholder="iiio.vercel"
-                                contentRight={
-                                    <SendButton>
-                                        <SendIcon />
-                                    </SendButton>
-                                }
-                            />
-                        </Grid>
-                    </Grid.Container>
+                   
                 </Grid>
 
 

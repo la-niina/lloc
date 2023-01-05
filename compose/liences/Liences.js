@@ -2,7 +2,7 @@ import { Container, Card, Row, Text, Spacer } from "@nextui-org/react"
 import { Box } from "./Box.js"
 
 export const Content = () => (
-    <Box css={{ px: "$12", mt: "$8", "@xsMax": { px: "$10" } }}>
+    <Container>
         <Text h2 size={40}
             css={{
                 textGradient: "45deg, $blue600 -20%, $pink600 50%",
@@ -20,10 +20,10 @@ export const Content = () => (
                 <Row justify="center" align="center">
                     <Text h6 size="$lg" color="white"
                         css={{
-                            m: 0 ,
+                            m: 0,
                             textGradient: "45deg, $blue600 -20%, $pink600 50%",
                         }}
-                        >
+                    >
                         Note: The Google Play Licensing service is primarily intended for paid applications that wish to verify that the current user did in fact pay for the application on Google Play. However, any application (including free apps) may use the licensing service to initiate the download of an APK expansion file. In which case, the request that your application sends to the licensing service is not to check whether the user paid for the app, but to request the URL of the expansion files. For information about downloading expansion files for your application, read the guide to APK Expansion Files.
                     </Text>
                 </Row>
@@ -70,5 +70,5 @@ export const Content = () => (
         </Text>
         <Spacer y={1} />
         <Spacer y={1} />
-    </Box>
+    </Container>
 );

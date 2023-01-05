@@ -76,13 +76,13 @@ export const Content = () => (
 
 
         <Grid xs={12} sm={6} justify="flex-end" alignContent="center" alignItems="center">
-          <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center" 
-          css={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginBottom: "10px"
-          }}>
+          <Grid.Container gap={1} justify="center" alignContent="center" alignItems="center"
+            css={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              marginBottom: "10px"
+            }}>
             {list.map((item, index) => (
               <Grid xs={6} sm={4} key={index} css={{
                 display: "flex",
@@ -115,6 +115,39 @@ export const Content = () => (
         </Grid>
 
 
+      </Grid.Container>
+    </Container>
+
+    <Container>
+      <Grid.Container gap={1}>
+        <Grid xs={3} sm={3}>
+          <Card variant="flat">
+            <Card.Body>
+              <Text>Default card. (shadow)</Text>
+            </Card.Body>
+          </Card>
+        </Grid>
+        <Grid xs={3} sm={3}>
+          <Card variant="flat">
+            <Card.Body>
+              <Text>Flat card.</Text>
+            </Card.Body>
+          </Card>
+        </Grid>
+        <Grid xs={3} sm={3}>
+          <Card variant="flat">
+            <Card.Body>
+              <Text>Bordered card.</Text>
+            </Card.Body>
+          </Card>
+        </Grid>
+        <Grid xs={3} sm={3}>
+          <Card variant="flat">
+            <Card.Body>
+              <Text>Bordered card.</Text>
+            </Card.Body>
+          </Card>
+        </Grid>
       </Grid.Container>
     </Container>
 
