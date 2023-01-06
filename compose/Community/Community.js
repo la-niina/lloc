@@ -6,185 +6,80 @@ import { Box } from "./Box.js";
 
 export const Content = () => (
   <>
+    <Spacer y={1} />
     <Container>
       <Grid.Container gap={2} justify="flex-start">
-        <Grid xs={12} sm={3} justify="flex-end" alignContent="space-around" alignItems="baseline" variant="sticky">
-          <Collapse.Group shadow>
-            <Collapse weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-          </Collapse.Group>
+        <Grid xs={6} sm={2}>
+          <Card variant="flat"
+            isHoverable
+            isPressable>
+            <Card.Body css={{ p: 0 }}>
+              <Card.Image
+                src="/folder.png"
+                objectFit="cover"
+                width="80%"
+                height="100%"
+                alt="folder"
+              />
+            </Card.Body>
+            <Card.Footer css={{ justifyItems: "flex-start" }}>
+              <Row wrap="wrap" justify="space-between" align="center">
+                <Text b>New folder</Text>
+                <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  12.56 MB
+                </Text>
+              </Row>
+            </Card.Footer>
+          </Card>
         </Grid>
-
-        <Grid xs={12} sm={3} justify="flex-end" alignContent="space-around" alignItems="baseline" variant="sticky">
-          <Collapse.Group shadow>
-            <Collapse weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-          </Collapse.Group>
+        <Grid xs={6} sm={2}>
+          <Card variant="flat"
+            isHoverable
+            isPressable>
+            <Card.Body css={{ p: 0 }}>
+              <Card.Image
+                src="/folder.png"
+                objectFit="cover"
+                width="80%"
+                height="100%"
+                alt="folder"
+              />
+            </Card.Body>
+            <Card.Footer css={{ justifyItems: "flex-start" }}>
+              <Row wrap="wrap" justify="space-between" align="center">
+                <Text b>New folder</Text>
+                <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  12.56 MB
+                </Text>
+              </Row>
+            </Card.Footer>
+          </Card>
         </Grid>
-
-        <Grid xs={12} sm={3} justify="flex-end" alignContent="space-around" alignItems="baseline" variant="sticky">
-          <Collapse.Group shadow>
-            <Collapse weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-          </Collapse.Group>
+        <Grid xs={6} sm={2}>
+          <Card variant="flat"
+            isHoverable
+            isPressable>
+            <Card.Body css={{ p: 0 }}>
+              <Card.Image
+                src="/folder.png"
+                objectFit="cover"
+                width="80%"
+                height="100%"
+                alt="folder"
+              />
+            </Card.Body>
+            <Card.Footer css={{ justifyItems: "flex-start" }}>
+              <Row wrap="wrap" justify="space-between" align="center">
+                <Text b>New folder</Text>
+                <Text css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  12.56 MB
+                </Text>
+              </Row>
+            </Card.Footer>
+          </Card>
         </Grid>
-
-        <Grid xs={12} sm={3} justify="flex-end" alignContent="space-around" alignItems="baseline" variant="sticky">
-          <Collapse.Group shadow>
-            <Collapse weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-          </Collapse.Group>
-        </Grid>
-
-        <Grid xs={12} sm={3} justify="flex-end" alignContent="space-around" alignItems="baseline" variant="sticky">
-          <Collapse.Group shadow>
-            <Collapse weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-          </Collapse.Group>
-        </Grid>
-
-        <Grid xs={12} sm={3} justify="flex-end" alignContent="space-around" alignItems="baseline" variant="sticky">
-          <Collapse.Group shadow>
-            <Collapse weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} title="iOS development Swift or Flutter" arrowIcon={<AnchorIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Web development node.js" arrowIcon={<MoonIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-            <Collapse title="Android development Kotlin" arrowIcon={<SunIcon />}>
-              <Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </Text>
-            </Collapse>
-          </Collapse.Group>
-        </Grid>
-        
       </Grid.Container>
     </Container>
-
     <Spacer y={1} />
     <Spacer y={1} />
   </>
