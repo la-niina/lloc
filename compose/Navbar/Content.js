@@ -9,12 +9,12 @@ import { Card4 } from './Card/Card4';
 import { Card5 } from './Card/Card5';
 const list = [
   {
-    title: "hardware",
+    title: "desktop",
     img: "motherboard.png",
     price: "@",
   },
   {
-    title: "phone",
+    title: "mobile",
     img: "phone.png",
     price: "@",
   },
