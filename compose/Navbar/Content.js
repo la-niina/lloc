@@ -211,7 +211,7 @@ export const Content = () => (
               onClick={() => {
                 window.location.href = "https://github.com/la-niina"
               }}
-              css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, }}>
+              css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
                 <img
                   alt="nextui logo"
@@ -243,7 +243,7 @@ export const Content = () => (
               onClick={() => {
                 window.location.href = "https://twitter.com/la_nniina"
               }}
-              css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, }}>
+              css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
                 <img
                   alt="twitter"
@@ -274,7 +274,7 @@ export const Content = () => (
           <Grid xs={12} sm={4}>
             <Card
               isPressable
-              css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, }}>
+              css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
                 <img
                   alt="nextui logo"
