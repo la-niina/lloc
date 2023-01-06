@@ -55,6 +55,7 @@ export default function Home() {
           <Navbar.Content
             enableCursorHighlight
             activeColor="secondary"
+            color="gradient"
             hideIn="xs"
             variant="highlight-rounded"
           >
@@ -71,7 +72,7 @@ export default function Home() {
 
           <Navbar.Content>
             <Navbar.Item>
-              <Button auto flat as={Link} onClick={handler}>
+              <Button auto color="gradient" flat as={Link} onClick={handler}>
                 Sign Up
               </Button>
             </Navbar.Item>

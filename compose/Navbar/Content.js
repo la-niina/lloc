@@ -9,19 +9,19 @@ import { Card4 } from './Card/Card4';
 import { Card5 } from './Card/Card5';
 const list = [
   {
-    title: "Orange",
-    img: "/images/fruit-1.jpeg",
-    price: "$5.50",
+    title: "hardware",
+    img: "motherboard.png",
+    price: "@",
   },
   {
-    title: "Tangerine",
-    img: "/images/fruit-2.jpeg",
-    price: "$3.00",
+    title: "phone",
+    img: "phone.png",
+    price: "@",
   },
   {
-    title: "Cherry",
-    img: "/images/fruit-3.jpeg",
-    price: "$10.00",
+    title: "web",
+    img: "websites.png",
+    price: "@",
   },
 ];
 
@@ -30,25 +30,26 @@ export const Content = () => (
     <Container>
       <Grid.Container gap={2} justify="flex-start">
         <Grid>
-          <Row justify="center">
-            <Text h1>
-              Make <a css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>beautiful</a> websites
-              <br />regardless of your design
-              <br />experience.
+          <Row justify="flex-start">
+            <Text h1 size="$4xl" xs={0} md={0}>
+              IIo we <a css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}>develop</a> beautiful
+              <br />softwares regardless of your
+              <br /> √design.
             </Text>
           </Row>
 
           <Row justify="flex-start">
             <Text weight="bold">
-              Beautiful, fast and modern React UI library.
+              we design and develop beautiful, fast and modern softwares
+              <br />for your preferences.
             </Text>
           </Row>
 
           <Spacer y={1} />
 
           <Grid.Container>
-            <Grid xs={12} md={6} wrap='wrap'>
-              <Button auto color="primary" rounded css={{
+            <Grid xs={12} md={6}>
+              <Button auto color="gradient" flat rounded css={{
                 display: "flex",
                 justifyContent: "center",
                 marginBottom: "10px"
@@ -87,10 +88,11 @@ export const Content = () => (
                 justifyContent: "center",
                 marginBottom: "10px"
               }}>
-                <Card isPressable>
+                <Card isPressable
+                  css={{ color: "#94f9f0", bg: "#1F0A33", zIndex: 5, }}>
                   <Card.Body css={{ p: 0 }}>
                     <Card.Image
-                      src={"https://nextui.org" + item.img}
+                      src={"/" + item.img}
                       objectFit="cover"
                       width="100%"
                       height={140}

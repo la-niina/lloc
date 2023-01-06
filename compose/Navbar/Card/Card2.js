@@ -1,7 +1,7 @@
 import { Card, Col, Text } from "@nextui-org/react";
 
 export const Card2 = () => (
-  <Card css={{ w: "100%" }}>
+  <Card css={{ w: "100%" }} isPressable>
     <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
       <Col>
         <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
