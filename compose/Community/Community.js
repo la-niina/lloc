@@ -13,10 +13,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -29,7 +26,7 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
@@ -47,10 +44,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -63,7 +57,38 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
+                  borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                  bottom: 0,
+                  zIndex: 1,
+                }}>
+                <Row wrap="wrap" justify="space-between" align="center">
+                  <Text size={12} b>Mac os</Text>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
+                    12.56 MB
+                  </Text>
+                </Row>
+              </Card.Footer>
+            </Card>
+          </Grid>
+
+          <Grid xs={6} sm={2}>
+            <Card variant="flat"
+              isHoverable
+              isPressable>
+              <Card.Body css={{ p: 0 }}>
+                <Card.Image
+                  src="/folder.png"
+                  objectFit="cover"
+                  width="80%"
+                  height="100%"
+                  alt="folder"
+                />
+              </Card.Body>
+              <Card.Footer isBlurred
+                css={{
+                  justifyItems: "flex-start",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
@@ -81,10 +106,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -97,7 +119,7 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
@@ -115,10 +137,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -131,7 +150,7 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
@@ -149,10 +168,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -165,7 +181,7 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
@@ -183,44 +199,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
-              <Card.Body css={{ p: 0 }}>
-                <Card.Image
-                  src="/folder.png"
-                  objectFit="cover"
-                  width="80%"
-                  height="100%"
-                  alt="folder"
-                />
-              </Card.Body>
-              <Card.Footer isBlurred
-                css={{
-                  justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
-                  borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
-                  bottom: 0,
-                  zIndex: 1,
-                }}>
-                <Row wrap="wrap" justify="space-between" align="center">
-                  <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
-                    12.56 MB
-                  </Text>
-                </Row>
-              </Card.Footer>
-            </Card>
-          </Grid>
-
-          <Grid xs={6} sm={2}>
-            <Card variant="flat"
-              isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -234,7 +213,7 @@ export const Content = () => (
                 isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
@@ -252,10 +231,7 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable
-              css={{
-                bg: "transparent"
-              }}>
+              isPressable>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/google-docs.png"
@@ -267,7 +243,7 @@ export const Content = () => (
               </Card.Body>
               <Card.Footer
                 css={{
-                  bgBlur: "#ffffff66",
+                  bgBlur: "#0f111466",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
                   zIndex: 1,
