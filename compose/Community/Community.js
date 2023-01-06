@@ -63,7 +63,7 @@ export const Content = () => (
                   zIndex: 1,
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
-                  <Text size={12} b>Mac os</Text>
+                  <Text size={12} b>New folder</Text>
                   <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
