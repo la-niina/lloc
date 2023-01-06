@@ -13,7 +13,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -26,7 +29,6 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -34,7 +36,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -45,7 +47,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -58,7 +63,6 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -66,7 +70,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -77,7 +81,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -90,7 +97,6 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -98,7 +104,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -109,7 +115,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -122,7 +131,6 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -130,7 +138,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -141,7 +149,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -154,7 +165,6 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -162,7 +172,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -173,7 +183,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -186,7 +199,6 @@ export const Content = () => (
               <Card.Footer isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -194,7 +206,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -205,7 +217,10 @@ export const Content = () => (
           <Grid xs={6} sm={2}>
             <Card variant="flat"
               isHoverable
-              isPressable>
+              isPressable
+              css={{
+                bg: "transparent"
+              }}>
               <Card.Body css={{ p: 0 }}>
                 <Card.Image
                   src="/folder.png"
@@ -219,7 +234,6 @@ export const Content = () => (
                 isBlurred
                 css={{
                   justifyItems: "flex-start",
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
@@ -227,7 +241,7 @@ export const Content = () => (
                 }}>
                 <Row wrap="wrap" justify="space-between" align="center">
                   <Text size={12} b>New folder</Text>
-                  <Text size={8} css={{ color: "$accents7", fontWeight: "$semibold", fontSize: "$sm" }}>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
                     12.56 MB
                   </Text>
                 </Row>
@@ -253,7 +267,6 @@ export const Content = () => (
               </Card.Body>
               <Card.Footer
                 css={{
-                  position: "absolute",
                   bgBlur: "#ffffff66",
                   borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
                   bottom: 0,
