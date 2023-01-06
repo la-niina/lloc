@@ -1,108 +1,156 @@
-import { Container, Card, Row, Textarea, Text, Spacer, useInput, Image, Grid, Button, Input } from "@nextui-org/react"
+import { Container, Card, Row, Textarea, User, Text, Spacer, useInput, Image, Grid, Button, Link, Input } from "@nextui-org/react"
 import { SendButton } from "./Card/SendButton";
 import { SendIcon } from "./Card/SendIcon";
 import { Box } from "./Box.js"
 
 const list = [
     {
-        title: "Orange",
-        img: "/images/fruit-1.jpeg",
-        price: "$5.50",
+        title: "hardware",
+        img: "motherboard.png",
+        price: "@",
     },
     {
-        title: "Tangerine",
-        img: "/images/fruit-2.jpeg",
-        price: "$3.00",
+        title: "phone",
+        img: "phone.png",
+        price: "@",
     },
     {
-        title: "Cherry",
-        img: "/images/fruit-3.jpeg",
-        price: "$10.00",
+        title: "web",
+        img: "websites.png",
+        price: "@",
     },
 ];
 
 export const Content = () => (
     <>
-        <Container>
-            <Text h2 size={40}
-                justify="flex-start"
-                css={{
-                    textAlign: "flex-start",
-                    textGradient: "45deg, $blue600 -20%, $pink600 50%",
-                    margin: "10px"
-                }}
-                weight="bold">About</Text>
-        </Container>
-
+        <Spacer y={1} />
+        <Spacer y={1} />
         <Container>
             <Grid.Container gap={2} justify="center">
                 <Card
-                    css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, }}>
+                    css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, borderRadius: "20px" }}>
                     <Grid.Container gap={2}>
+                        <Spacer y={1} />
                         <Row justify="center">
                             <Text size={40}
                                 css={{
                                     textAlign: "center",
                                     textGradient: "45deg, $blue600 -20%, $pink600 50%",
                                     margin: "10px"
-                                }}>
+                                }}
+                                weight="bold">
                                 Contact us
                             </Text>
                         </Row>
-                        <Row>
-                            <Input
-                                css={{
-                                    width: "100%",
-                                    marginLeft: "20%",
-                                    marginRight: "20%",
-                                    marginTop: "5px"
-                                }}
-                                clearable
-                                label="Name"
-                                placeholder="Name"
-                                initialValue="Name" />
-                        </Row>
-                        <Row>
-                            <Input
-                                css={{
-                                    width: "100%",
-                                    marginLeft: "20%",
-                                    marginRight: "20%",
-                                    marginTop: "5px"
-                                }}
-                                clearable
-                                label="Email"
-                                placeholder="Name"
-                                initialValue="Email Address" />
+
+                        <Row justify="center">
+                            <Container fluid sm justify="center">
+
+                                <Card isPressable isHoverable
+                                    css={{
+                                        p: "$6",
+                                        mw: "100%",
+                                        marginTop: "10px",
+                                        marginBottom: "10px",
+                                        color: "#94f9f0",
+                                        bg: "#16181A"
+                                    }}
+                                    flat>
+                                    <Card.Body css={{ py: "$2" }}>
+                                        <Text
+                                            css={{
+                                                textAlign: "flex-start",
+                                            }}>
+                                            IIo is a start up software company that provides a multitude of
+                                            services . IIo services include : | Android Applications Development
+                                            | Ios Applications Development
+                                            | Windows Applications Development
+                                            | Linux Applications Development
+                                            | Mac os Applications Development
+                                            | Server/Web Applications Development etc
+                                            <br />
+                                            <br />
+                                            We also provide services link information sharing , tutoring in software dev,
+                                            creating installing media for different devices e.g installing mac os on a windows
+                                            laptop | desktop
+                                        </Text>
+                                    </Card.Body>
+                                    <Card.Footer>
+                                        <Link
+                                            icon
+                                            color="primary"
+                                            target="_blank"
+                                            href="https://github.com/la-niina"
+                                        >
+                                            Visit source codes on GitHub.
+                                        </Link>
+                                    </Card.Footer>
+                                </Card>
+                            </Container>
                         </Row>
 
-                        <Row>
-                            <Textarea
-                                css={{
-                                    width: "100%",
-                                    marginLeft: "20%",
-                                    marginRight: "20%",
-                                    marginTop: "10px",
-                                    marginBottom: "10px",
-                                    resize: "both"
-                                }}
-                                placeholder="write your message right here..."
-                                minRows={8}
-                            />
+                        <Spacer y={1} />
+
+                        <Row justify="center">
+                            <Container fluid sm>
+                                <Input
+                                    size="xl"
+                                    css={{
+                                        width: "100%",
+                                        marginTop: "5px"
+                                    }}
+                                    clearable
+                                    label="Name"
+                                    placeholder="Name"
+                                    initialValue="Name" />
+                            </Container>
+                        </Row>
+                        <Row justify="center">
+                            <Container fluid sm>
+                                <Input
+                                    size="xl"
+                                    css={{
+                                        width: "100%",
+                                        marginTop: "5px"
+                                    }}
+                                    clearable
+                                    label="Email"
+                                    placeholder="Name"
+                                    initialValue="Email Address" />
+                            </Container>
+                        </Row>
+
+                        <Row justify="center">
+                            <Container fluid sm>
+                                <Textarea
+                                    css={{
+                                        width: "100%",
+                                        marginTop: "15px",
+                                        marginBottom: "10px"
+                                    }}
+                                    placeholder="write your message right here..."
+                                    minRows={8}
+                                />
+                            </Container>
                         </Row>
 
                         <Row justify="flex-end">
-                            <Button auto color="gradient" flat css={{
-                                width: "30%",
-                                marginLeft: "20%",
-                                marginRight: "20%",
-                                marginTop: "10px",
-                                marginBottom: "10px",
-                            }} rounded >Send</Button>
-                            <Spacer y={1} />
+                            <Container fluid sm justify="flex-end"
+                                css={{
+                                    justifyContent: "flex-end"
+                                }}>
+                                <Button auto color="gradient" flat css={{
+                                    width: "30%",
+                                    marginTop: "10px",
+                                    marginBottom: "50px",
+                                }} rounded={20} >Send</Button>
+                            </Container>
                         </Row>
+                        <Spacer y={1} />
                     </Grid.Container>
                 </Card>
+
+                <Spacer y={1} />
                 <Spacer y={1} />
             </Grid.Container>
         </Container>
