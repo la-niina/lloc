@@ -165,8 +165,27 @@ export const Content = () => (
     <Container>
       <Grid.Container gap={1} justify="center">
         <Grid>
-          <Text>
-            The estimation of my payments and charges for different services.
+          <Text size={20} css={{
+            display: "flex",
+            borderRadius: "30px",
+            width: "100%",
+            padding: "5px",
+            border: "3px solid #1F0A33",
+            alignItems: "center",
+            justifyContent: "center",
+            textGradient: "45deg, $blue600 -20%, $pink600 50%",
+            textDecoration: "none",
+          }}>
+            <a
+              href="mailto:la.niina.me@gmail.com"
+              target="_blank"
+              css={{
+                padding: "10px"
+              }}
+              rel="noopener noreferrer"
+            >
+              hourly rates : $48.00/hr
+            </a>
           </Text>
         </Grid>
       </Grid.Container>
