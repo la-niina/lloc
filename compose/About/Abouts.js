@@ -59,12 +59,36 @@ export const Content = () => (
                                                 textAlign: "flex-start",
                                             }}>
                                             lloc is a start-up software company that provides a multitude of
-                                            services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc.
+                                            services. We specialize in developing software solutions for both mobile
+                                            and web platforms. We offer services such as custom software development,
+                                            UI/UX design, software testing, and maintenance. Additionally, we provide
+                                            consulting services to help our clients understand their technology needs and
+                                            create solutions that are tailored to their requirements. We strive to  provide
+                                            the best customer experience through our highly professional and experienced team.
                                             <br />
                                             <br />
-                                            We also provide services like information sharing , tutoring software devs,
-                                            creating installation media's for different devices e.g installing mac os on a windows
-                                            laptop | desktop
+                                            <a b>We can provide various services related to software development, such as:</a>
+                                            <br />-consulting and advising on best practices for software development
+                                            <br />-tutoring and training on software development topics, such as programming languages and frameworks
+                                            <br />-creating installation media for different devices, such as installing Mac OS on a Windows laptop/desktop
+                                            <br />-sharing information and resources on software development
+                                            <br />-assistance with debugging and troubleshooting existing software
+                                            <br />-building custom software solutions or customizing existing software products
+                                            <br />-providing technical support for software-related issues
+                                            <br />-creating automated build, test, and release processes for software applications.
+                                            <br />
+                                            <br />
+                                            <a b>We are also experienced in providing services related to cloud computing, such as:</a>
+                                            <br />-migrating applications to the cloud
+                                            <br />-deploying and managing cloud-hosted applications
+                                            <br />-building cloud-native applications
+                                            <br />-developing and deploying serverless architectures
+                                            <br />-designing and managing cloud infrastructure
+                                            <br />-building secure and compliant cloud applications
+                                            <br />-implementing DevOps and CI/CD pipelines in the cloud
+                                            <br />-monitoring and optimizing cloud performance.
+
+                                            We look forward to helping you with your software development needs!
                                         </Text>
                                     </Card.Body>
                                     <Card.Footer>
