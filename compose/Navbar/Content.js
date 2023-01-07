@@ -208,7 +208,7 @@ export const Content = () => (
     <Container>
       <Grid.Container gap={1} justify="center">
         <Grid>
-          <Text size={20} css={{
+          <Text xs={12} md={8} css={{
             display: "flex",
             borderRadius: "30px",
             width: "100%",
