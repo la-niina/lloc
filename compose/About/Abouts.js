@@ -129,13 +129,14 @@ export const Content = () => (
                         <Row justify="flex-end">
                             <Container fluid sm justify="flex-end"
                                 css={{
-                                    justifyContent: "flex-end"
+                                    justifyContent: "flex-end",
+                                    alignItems: "flex-end",
                                 }}>
-                                <Button auto color="gradient" flat css={{
-                                    width: "30%",
+                                <Button auto color="gradient" rounded flat css={{
+                                    width: "20%",
                                     marginTop: "10px",
                                     marginBottom: "50px",
-                                }} rounded={20} >Send</Button>
+                                }} >Send</Button>
                             </Container>
                         </Row>
 

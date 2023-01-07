@@ -71,7 +71,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                     <Navbar.Toggle showIn="xs" />
                     <Navbar.Content>
                         <Navbar.Item>
-                            <Button auto flat as={Link} onClick={handler}>
+                            <Button auto flat rounded color="gradient" as={Link} onClick={handler}>
                                 Sign Up
                             </Button>
                         </Navbar.Item>
@@ -120,10 +120,10 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                             </Row>
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button auto flat color="error" onClick={closeHandler}>
+                            <Button auto flat color="error" rounded onClick={closeHandler}>
                                 Close
                             </Button>
-                            <Button auto onClick={closeHandler}>
+                            <Button auto rounded color="gradient"  onClick={closeHandler}>
                                 Sign in
                             </Button>
                         </Modal.Footer>
