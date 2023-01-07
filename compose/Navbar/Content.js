@@ -159,6 +159,49 @@ export const Content = () => (
           />
         </Grid>
 
+        <Grid>
+          <User
+            src="/swift.svg"
+            name="Swift"
+            size="lg"
+            squared
+          />
+        </Grid>
+        <Grid>
+          <User
+            src="/flutter.svg"
+            name="Flutter"
+            size="lg"
+            squared
+          />
+        </Grid>
+
+        <Grid>
+          <User
+            src="/firebase.svg"
+            name="Firebase"
+            size="lg"
+            squared
+          />
+        </Grid>
+        <Grid>
+          <User
+            src="/xcode.svg"
+            name="Xcode"
+            size="lg"
+            squared
+          />
+        </Grid>
+
+        <Grid>
+          <User
+            src="/nodejs.svg"
+            name="NodeJS"
+            size="lg"
+            squared
+          />
+        </Grid>
+
       </Grid.Container>
     </Container>
 
