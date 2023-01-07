@@ -267,8 +267,17 @@ export const Content = () => (
           </Text>
         </Row>
         <Row justify="center">
-          <Text justify="center">
+          <Text justify="center" css={{
+            textAlign: "center",
+          }}>
             Get involved in our community. Everyone is welcome!
+            <br />
+            <br />
+            We want everyone to be a part of our community! We host events and activities throughout
+            the year and encourage everyone to participate. We also have an active online presence
+            and would love for you to join us on social media and take part in our discussions.
+            If you have an idea for an event or activity, or would like to volunteer,
+            please reach out and let us know. We look forward to hearing from you!
           </Text>
         </Row>
       </Grid>
@@ -344,18 +353,21 @@ export const Content = () => (
           <Grid xs={12} sm={4}>
             <Card
               isPressable
+              onClick={() => {
+                window.location.href = "https://t.me/llocdev"
+              }}
               css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
                 <img
                   alt="nextui logo"
-                  src="/discord.svg"
+                  src="/telegram.svg"
                   width="34px"
                   height="34px"
                 />
                 <Grid.Container css={{ pl: "$6" }}>
                   <Grid xs={12} sm={4}>
                     <Text h4 css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>
-                      Discord
+                      telegram
                     </Text>
                   </Grid>
                 </Grid.Container>

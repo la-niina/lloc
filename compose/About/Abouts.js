@@ -174,7 +174,10 @@ export const Content = () => (
                                         width: "100%",
                                         textAlign: "center",
                                     }}>
-                                    Your can also directly email me on my email address if your not interested in filling in the informations above or also contact me throught my social media handles below</Text>
+                                    Your can also directly email me on my email address if
+                                    your not interested in filling in the informations above
+                                    or also contact me throught my social media handles below
+                                </Text>
 
                                 <Card xm={12} md={4}
                                     css={{
@@ -206,9 +209,21 @@ export const Content = () => (
                                         </Text>
                                     </Row>
                                     <Row justify="center">
-                                        <Text justify="center">
-                                            Get involved in our community. Everyone is welcome!
-                                        </Text>
+                                        <Container fluid sm justify="center">
+                                            <Text justify="flex-start"
+                                                css={{
+                                                    textAlign: "flex-start",
+                                                }}>
+                                                Get involved in our community. Everyone is welcome!
+                                                <br />
+                                                <br />
+                                                We want everyone to be a part of our community! We host events and activities throughout
+                                                the year and encourage everyone to participate. We also have an active online presence
+                                                and would love for you to join us on social media and take part in our discussions.
+                                                If you have an idea for an event or activity, or would like to volunteer,
+                                                please reach out and let us know. We look forward to hearing from you!
+                                            </Text>
+                                        </Container>
                                     </Row>
                                 </Grid>
 
