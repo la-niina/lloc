@@ -23,7 +23,8 @@ export const Content = () => (
                   alt="folder"
                 />
               </Card.Body>
-              <Card.Footer isBlurred
+              <Card.Footer
+                isBlurred
                 css={{
                   justifyItems: "flex-start",
                   bgBlur: "#0f111466",

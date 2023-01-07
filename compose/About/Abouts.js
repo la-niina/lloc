@@ -143,8 +143,164 @@ export const Content = () => (
                                 }} rounded={20} >Send</Button>
                             </Container>
                         </Row>
-                        <Spacer y={1} />
+
+                        <Row justify="flex-end">
+                            <Container fluid sm justify="flex-end"
+                                css={{
+                                    justifyContent: "flex-end"
+                                }}>
+                                <Text
+                                    css={{
+                                        width: "100%",
+                                        textAlign: "center",
+                                    }}>
+                                        Your can also directly email me on my email address if your not interested in filling in the informations above or also contact me throught my social media handles below</Text>
+
+                                <Card xm={12} md={4}
+                                    css={{
+                                        width: "100%",
+                                        marginTop: "10px"
+                                    }}>
+                                    <Text
+                                        xm={12} md={12}
+                                        css={{
+                                            textAlign: "flex-start",
+                                            padding: "5px"
+                                        }}><a href="mailto:la.niina.me@gmail.com">
+                                            lloc.email@me.com</a></Text>
+                                </Card>
+                            </Container>
+                        </Row>
+
+                        <Row justify="flex-end">
+                            <Container
+                                css={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                }}>
+
+                                <Grid justify="center">
+                                    <Row justify="center">
+                                        <Text h1 size={60} css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%", }} weight="bold">
+                                            Social media handles
+                                        </Text>
+                                    </Row>
+                                    <Row justify="center">
+                                        <Text justify="center">
+                                            Get involved in our community. Everyone is welcome!
+                                        </Text>
+                                    </Row>
+                                </Grid>
+
+                                <Row justify="center" css={{ top: '$15' }}>
+                                    <Grid.Container gap={2} justify="center">
+                                        <Grid xs={12} sm={4}>
+                                            <Card
+                                                isPressable
+                                                onClick={() => {
+                                                    window.location.href = "https://github.com/la-niina"
+                                                }}
+                                                css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
+                                                <Card.Header>
+                                                    <img
+                                                        alt="nextui logo"
+                                                        src="/github.svg"
+                                                        width="34px"
+                                                        height="34px"
+                                                    />
+                                                    <Grid.Container css={{ pl: "$6" }}>
+                                                        <Grid xs={12} sm={4}>
+                                                            <Text h4 css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>
+                                                                GitHub
+                                                            </Text>
+                                                        </Grid>
+                                                    </Grid.Container>
+                                                </Card.Header>
+                                                <Card.Body>
+                                                    <Row justify="center">
+                                                        <Text size="sm">
+                                                            For issues, feature requests and contribute.
+                                                        </Text>
+                                                    </Row>
+                                                </Card.Body>
+                                            </Card>
+                                        </Grid>
+
+                                        <Grid xs={12} sm={4}>
+                                            <Card
+                                                isPressable
+                                                onClick={() => {
+                                                    window.location.href = "https://twitter.com/la_nniina"
+                                                }}
+                                                css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
+                                                <Card.Header>
+                                                    <img
+                                                        alt="twitter"
+                                                        src="/twitter.svg"
+                                                        width="34px"
+                                                        height="34px"
+                                                    />
+                                                    <Grid.Container css={{ pl: "$6" }}>
+                                                        <Grid xs={12} sm={4}>
+                                                            <Text h4 css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>
+                                                                Twitter
+                                                            </Text>
+                                                        </Grid>
+                                                    </Grid.Container>
+                                                </Card.Header>
+                                                <Card.Body>
+                                                    <Row justify="center">
+                                                        <Text size="sm">
+                                                            For announcements, tips and general information.
+                                                        </Text>
+                                                    </Row>
+                                                </Card.Body>
+                                            </Card>
+                                        </Grid>
+
+                                        <Spacer y={1} />
+
+                                        <Grid xs={12} sm={4}>
+                                            <Card
+                                                isPressable
+                                                onClick={() => {
+                                                    window.location.href = "https://t.me/llocdev"
+                                                }}
+                                                css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
+                                                <Card.Header>
+                                                    <img
+                                                        alt="nextui logo"
+                                                        src="/telegram.svg"
+                                                        width="34px"
+                                                        height="34px"
+                                                    />
+                                                    <Grid.Container css={{ pl: "$6" }}>
+                                                        <Grid xs={12} sm={4}>
+                                                            <Text h4 css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>
+                                                                telegram
+                                                            </Text>
+                                                        </Grid>
+                                                    </Grid.Container>
+                                                </Card.Header>
+                                                <Card.Body>
+                                                    <Row justify="center">
+                                                        <Text size="sm">
+                                                            To get involved in the community, ask questions and share tips.
+                                                        </Text>
+                                                    </Row>
+                                                </Card.Body>
+                                            </Card>
+                                        </Grid>
+                                    </Grid.Container>
+                                </Row>
+                            </Container>
+                        </Row>
                     </Grid.Container>
+                    <Spacer y={1} />
+                    <Spacer y={1} />
+                    <Spacer y={1} />
+                    <Spacer y={1} />
+                    <Spacer y={1} />
                 </Card>
 
                 <Spacer y={1} />

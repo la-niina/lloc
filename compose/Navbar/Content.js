@@ -163,6 +163,16 @@ export const Content = () => (
     </Container>
 
     <Container>
+      <Grid.Container gap={1} justify="center">
+        <Grid>
+          <Text>
+            The estimation of my payments and charges for different services.
+          </Text>
+        </Grid>
+      </Grid.Container>
+    </Container>
+
+    <Container>
       <Grid.Container gap={2} justify="center">
         <Grid xs={12} sm={4}>
           <Card1 />
@@ -180,7 +190,6 @@ export const Content = () => (
           <Card5 />
         </Grid>
       </Grid.Container>
-
     </Container>
 
     <Container

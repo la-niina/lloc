@@ -28,17 +28,10 @@ export default function Community() {
         <>
             <Head>
                 <title>lloc | Community</title>
-                 <meta name="description" content="IIo is a start up software company that provides a multitude of
-                                            services . IIo services include : | Android Applications Development
-                                            | Ios Applications Development
-                                            | Windows Applications Development
-                                            | Linux Applications Development
-                                            | Mac os Applications Development
-                                            | Server/Web Applications Development etc
-                                            We also provide services link information sharing , tutoring in software dev,
-                                            creating installing media for different devices e.g installing mac os on a windows
-                                            laptop | desktop" />
-                <meta name="author" content="la niina" />
+                 <meta name="description" content="lloc is a start-up software company that provides a multitude of
+services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc.  " />
+               <meta name="keywords" content="lloc, la-nniina, la-niina, software, start-up , developer, freelancer, website , mobile , android , ios , swift"/>
+        <meta name="author" content="la niina" />
                 <meta name="viewer" content="lloc" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/logo.svg" />
