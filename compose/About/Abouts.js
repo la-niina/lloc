@@ -58,17 +58,12 @@ export const Content = () => (
                                             css={{
                                                 textAlign: "flex-start",
                                             }}>
-                                            lloc is a start up software company that provides a multitude of
-                                            services . IIo services include : | Android Applications Development
-                                            | Ios Applications Development
-                                            | Windows Applications Development
-                                            | Linux Applications Development
-                                            | Mac os Applications Development
-                                            | Server/Web Applications Development etc
+                                            lloc is a start-up software company that provides a multitude of
+                                            services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc.
                                             <br />
                                             <br />
-                                            We also provide services link information sharing , tutoring in software dev,
-                                            creating installing media for different devices e.g installing mac os on a windows
+                                            We also provide services like information sharing , tutoring software devs,
+                                            creating installation media's for different devices e.g installing mac os on a windows
                                             laptop | desktop
                                         </Text>
                                     </Card.Body>
@@ -154,7 +149,7 @@ export const Content = () => (
                                         width: "100%",
                                         textAlign: "center",
                                     }}>
-                                        Your can also directly email me on my email address if your not interested in filling in the informations above or also contact me throught my social media handles below</Text>
+                                    Your can also directly email me on my email address if your not interested in filling in the informations above or also contact me throught my social media handles below</Text>
 
                                 <Card xm={12} md={4}
                                     css={{
