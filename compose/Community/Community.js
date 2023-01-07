@@ -8,12 +8,7 @@ export const Content = () => (
   <>
     <Spacer y={1} />
     <Container>
-    
-    </Container>
-
-    <Spacer y={1} />
-    <Container>
-      <Grid xs={13} sm={12} md={12} justify="flex-end" alignContent="center">
+      <Grid xs={12} sm={12} md={12} justify="flex-end" alignContent="center">
         <Grid.Container gap={2} justify="flex-start">
           <Grid xs={6} sm={2}>
             <Card variant="flat"
