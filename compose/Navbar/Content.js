@@ -32,7 +32,7 @@ export const Content = () => (
         <Grid>
           <Row justify="flex-start">
             <Text h1 size="$4xl" xs={0} md={0}>
-              IIo we <a css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}>develop</a> beautiful
+              lloc we <a css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}>develop</a> beautiful
               <br />softwares regardless of your
               <br /> √design.
             </Text>
