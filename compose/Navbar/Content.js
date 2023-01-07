@@ -117,7 +117,6 @@ export const Content = () => (
     </Container>
 
     <Container>
-
       <Grid.Container gap={1} justify="center" alignContent="center">
         <Grid>
           <User
