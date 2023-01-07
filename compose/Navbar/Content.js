@@ -227,7 +227,7 @@ export const Content = () => (
               }}
               rel="noopener noreferrer"
             >
-              hourly rates : $48.00/hr
+                 hourly rates : $48.00/hr  
             </a>
           </Text>
         </Grid>

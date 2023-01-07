@@ -1,4 +1,4 @@
-import { Container, Card, Row, Collapse, Text, Spacer, Image, Grid, Button, Loading, Col } from "@nextui-org/react";
+import { Container, Card, Row, Collapse, Text, Spacer, Image, Grid, Button, Loading, Col, Link } from "@nextui-org/react";
 import { SunIcon } from './icons/SunIcon';
 import { MoonIcon } from './icons/MoonIcon';
 import { AnchorIcon } from './icons/AnchorIcon';
@@ -6,6 +6,11 @@ import { Box } from "./Box.js";
 
 export const Content = () => (
   <>
+    <Spacer y={1} />
+    <Container>
+    
+    </Container>
+
     <Spacer y={1} />
     <Container>
       <Grid xs={13} sm={12} md={12} justify="flex-end" alignContent="center">

@@ -68,25 +68,25 @@ export const Content = () => (
                                             <br />
                                             <br />
                                             <a b>We can provide various services related to software development, such as:</a>
-                                            <br />-consulting and advising on best practices for software development
-                                            <br />-tutoring and training on software development topics, such as programming languages and frameworks
-                                            <br />-creating installation media for different devices, such as installing Mac OS on a Windows laptop/desktop
-                                            <br />-sharing information and resources on software development
-                                            <br />-assistance with debugging and troubleshooting existing software
-                                            <br />-building custom software solutions or customizing existing software products
-                                            <br />-providing technical support for software-related issues
-                                            <br />-creating automated build, test, and release processes for software applications.
+                                            <br />✅ consulting and advising on best practices for software development
+                                            <br />✅ tutoring and training on software development topics, such as programming languages and frameworks
+                                            <br />✅ creating installation media for different devices, such as installing Mac OS on a Windows laptop/desktop
+                                            <br />✅ sharing information and resources on software development
+                                            <br />✅ assistance with debugging and troubleshooting existing software
+                                            <br />✅ building custom software solutions or customizing existing software products
+                                            <br />✅ providing technical support for software-related issues
+                                            <br />✅ creating automated build, test, and release processes for software applications.
                                             <br />
                                             <br />
                                             <a b>We are also experienced in providing services related to cloud computing, such as:</a>
-                                            <br />-migrating applications to the cloud
-                                            <br />-deploying and managing cloud-hosted applications
-                                            <br />-building cloud-native applications
-                                            <br />-developing and deploying serverless architectures
-                                            <br />-designing and managing cloud infrastructure
-                                            <br />-building secure and compliant cloud applications
-                                            <br />-implementing DevOps and CI/CD pipelines in the cloud
-                                            <br />-monitoring and optimizing cloud performance.
+                                            <br />✅ migrating applications to the cloud
+                                            <br />✅ deploying and managing cloud-hosted applications
+                                            <br />✅ building cloud-native applications
+                                            <br />✅ developing and deploying serverless architectures
+                                            <br />✅ designing and managing cloud infrastructure
+                                            <br />✅ building secure and compliant cloud applications
+                                            <br />✅ implementing DevOps and CI/CD pipelines in the cloud
+                                            <br />✅ monitoring and optimizing cloud performance.
 
                                             We look forward to helping you with your software development needs!
                                         </Text>
