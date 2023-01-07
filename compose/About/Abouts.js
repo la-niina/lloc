@@ -24,15 +24,14 @@ const list = [
 export const Content = () => (
     <>
         <Spacer y={1} />
-        <Spacer y={1} />
         <Container>
-            <Grid.Container gap={2} justify="center">
+            <Grid.Container gap={1} justify="center">
                 <Card
                     css={{ color: "#94f9f0", bg: "#0f111466", zIndex: 5, borderRadius: "20px" }}>
-                    <Grid.Container gap={2}>
+                    <Grid.Container gap={1}>
                         <Spacer y={1} />
                         <Row justify="center">
-                            <Text size={40}
+                            <Text size={30}
                                 css={{
                                     textAlign: "center",
                                     textGradient: "45deg, $blue600 -20%, $pink600 50%",
@@ -45,10 +44,8 @@ export const Content = () => (
 
                         <Row justify="center">
                             <Container fluid sm justify="center">
-
                                 <Card isPressable isHoverable
                                     css={{
-                                        p: "$6",
                                         mw: "100%",
                                         marginTop: "10px",
                                         marginBottom: "10px",
@@ -56,12 +53,12 @@ export const Content = () => (
                                         bg: "#16181A"
                                     }}
                                     flat>
-                                    <Card.Body css={{ py: "$2" }}>
+                                    <Card.Body>
                                         <Text
                                             css={{
                                                 textAlign: "flex-start",
                                             }}>
-                                            IIo is a start up software company that provides a multitude of
+                                            lloc is a start up software company that provides a multitude of
                                             services . IIo services include : | Android Applications Development
                                             | Ios Applications Development
                                             | Windows Applications Development
