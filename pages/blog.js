@@ -62,10 +62,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                         variant="highlight-rounded"
                     >
                         <Navbar.Link href="/">features</Navbar.Link>
-                        <Navbar.Link href="/community">
-                            community
-                        </Navbar.Link>
-                        <Navbar.Link href="/ai">ai</Navbar.Link>
+                        <Navbar.Link href="/community">community</Navbar.Link>
                         <Navbar.Link isActive href="/blog">blog</Navbar.Link>
                         <Navbar.Link href="/liences">liences</Navbar.Link>
                         <Navbar.Link href="/about">about</Navbar.Link>

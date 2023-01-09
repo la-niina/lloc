@@ -65,7 +65,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
           >
             <Navbar.Link isActive href="/">features</Navbar.Link>
             <Navbar.Link href="/community">community</Navbar.Link>
-            <Navbar.Link href="/ai">ai</Navbar.Link>
+            
             <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
