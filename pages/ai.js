@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from "react";
 import { Inter } from '@next/font/google'
 import { Navbar, Button, Image, Link, Text, useTheme, Avatar, Dropdown, Modal, Input, Row, Checkbox } from "@nextui-org/react";
-import { Layout } from "../compose/Navbar/Layout.js";
+import { Layout } from "../compose/Ai/AiLayout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
 import { icons } from "../compose/Icons.js";
@@ -10,7 +10,7 @@ import { icons } from "../compose/Icons.js";
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function AI() {
   const { isDark } = useTheme();
 
   const collapseItems = [
@@ -63,9 +63,9 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             hideIn="xs"
             variant="highlight-rounded"
           >
-            <Navbar.Link isActive href="/">features</Navbar.Link>
+            <Navbar.Link href="/">features</Navbar.Link>
             <Navbar.Link href="/community">community</Navbar.Link>
-            <Navbar.Link href="/ai">ai</Navbar.Link>
+            <Navbar.Link isActive href="/ai">ai</Navbar.Link>
             <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
