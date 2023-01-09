@@ -10,7 +10,7 @@ export const Content = () => (
     <Container>
       <Grid xs={12} sm={12} md={12} justify="flex-end" alignContent="center">
         <Grid.Container gap={2} justify="flex-start">
-          <Grid xs={6} sm={2}>
+          <Grid xs={4} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -42,7 +42,7 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={4} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -73,7 +73,7 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={4} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -104,7 +104,7 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={4} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -135,7 +135,7 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={4} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -166,7 +166,38 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={4} sm={1.5}>
+            <Card variant="flat"
+              isHoverable
+              isPressable>
+              <Card.Body css={{ p: 0 }}>
+                <Card.Image
+                  src="/folder.png"
+                  objectFit="cover"
+                  width="80%"
+                  height="100%"
+                  alt="folder"
+                />
+              </Card.Body>
+              <Card.Footer isBlurred
+                css={{
+                  justifyItems: "flex-start",
+                  bgBlur: "#0f111466",
+                  borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                  bottom: 0,
+                  zIndex: 1,
+                }}>
+                <Row wrap="wrap" justify="space-between" align="center">
+                  <Text size={12} b>New folder</Text>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
+                    12.56 MB
+                  </Text>
+                </Row>
+              </Card.Footer>
+            </Card>
+          </Grid>
+          
+          <Grid xs={4} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -197,7 +228,7 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={6} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
@@ -229,7 +260,39 @@ export const Content = () => (
             </Card>
           </Grid>
 
-          <Grid xs={6} sm={2}>
+          <Grid xs={6} sm={1.5}>
+            <Card variant="flat"
+              isHoverable
+              isPressable>
+              <Card.Body css={{ p: 0 }}>
+                <Card.Image
+                  src="/folder.png"
+                  objectFit="cover"
+                  width="80%"
+                  height="100%"
+                  alt="folder"
+                />
+              </Card.Body>
+              <Card.Footer
+                isBlurred
+                css={{
+                  justifyItems: "flex-start",
+                  bgBlur: "#0f111466",
+                  borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                  bottom: 0,
+                  zIndex: 1,
+                }}>
+                <Row wrap="wrap" justify="space-between" align="center">
+                  <Text size={12} b>New folder</Text>
+                  <Text size={8} css={{ color: "$secondary", fontWeight: "$semibold", fontSize: "$sm" }}>
+                    12.56 MB
+                  </Text>
+                </Row>
+              </Card.Footer>
+            </Card>
+          </Grid>
+
+          <Grid xs={6} sm={1.5}>
             <Card variant="flat"
               isHoverable
               isPressable>
