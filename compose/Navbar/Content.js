@@ -208,28 +208,40 @@ export const Content = () => (
     <Container>
       <Grid.Container gap={1} justify="center">
         <Grid>
-          <Text xs={12} md={8} css={{
+          <Card
+          css={{
             display: "flex",
-            borderRadius: "30px",
-            width: "100%",
-            padding: "5px",
-            border: "3px solid #1F0A33",
-            alignItems: "center",
             justifyContent: "center",
-            textGradient: "45deg, $blue600 -20%, $pink600 50%",
-            textDecoration: "none",
+            borderRadius: "30px",
+            color: "#94f9f0", 
+            bg: "#1F0A33",
+            zIndex: 5,
           }}>
+            <Card.Body css={{ p: 0 }}>
+            <Text xs={12} md={8}
+             css={{
+              padding: "20px",
+              color: "#fff",
+              textGradient: "45deg, $yellow600 -20%, $red600 100%"
+            }}>
             <a
               href="mailto:la.niina.me@gmail.com"
               target="_blank"
-              css={{
-                padding: "10px"
-              }}
               rel="noopener noreferrer"
+              css={{
+                padding: "20px",
+                color: "#fff",
+                textGradient: "45deg, $yellow600 -20%, $red600 100%"
+              }}
             >
-                 hourly rates : $48.00/hr  
+              hourly rates : $18.00/hr
+              Overtime pay is usually 1.5 times the normal hourly rate,<br /> so for hourly
+              rates of $18.00/hr, overtime pay would be $27.00/hr.
             </a>
           </Text>
+            </Card.Body>
+          </Card>
+
         </Grid>
       </Grid.Container>
     </Container>
