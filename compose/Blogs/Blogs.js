@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Container, Dropdown, Modal, useModal, Card, Row, Text, Spacer, Image, Grid, Button, Loading, Col, Popover, User, Input } from "@nextui-org/react"
 import { Box } from "./Box.js";
 import { UserTwitterCard } from "./Icons/UserTwitterCard";

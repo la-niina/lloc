@@ -201,7 +201,7 @@ export const Content = () => (
                                     }}
                                     css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
                                     <Card.Header>
-                                        <img
+                                        <Image
                                             alt="nextui logo"
                                             src="/github.svg"
                                             width="34px"
@@ -233,7 +233,7 @@ export const Content = () => (
                                     }}
                                     css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
                                     <Card.Header>
-                                        <img
+                                        <Image
                                             alt="twitter"
                                             src="/twitter.svg"
                                             width="34px"
@@ -267,7 +267,7 @@ export const Content = () => (
                                     }}
                                     css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
                                     <Card.Header>
-                                        <img
+                                        <Image
                                             alt="nextui logo"
                                             src="/telegram.svg"
                                             width="34px"
