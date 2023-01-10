@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Container, Card, Row, Text, Spacer, Textarea, Grid } from "@nextui-org/react"
 import { Box } from "./Box.js"
 

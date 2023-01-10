@@ -1,4 +1,4 @@
-import { Container, Input, Text, User, Spacer, Grid, Card, Col, Row, Button, Loading } from "@nextui-org/react"
+import { Container, Input, Text, User, Spacer, Grid, Card, Col, Row, Button, Loading , Image} from "@nextui-org/react"
 import { Box } from "./Box.js"
 import { SendButton } from "./Card/SendButton";
 import { SendIcon } from "./Card/SendIcon";
@@ -304,12 +304,11 @@ export const Content = () => (
               }}
               css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
-                <img
+                <Image
                   alt="nextui logo"
                   src="/github.svg"
                   width="34px"
-                  height="34px"
-                />
+                  height="34px"/>
                 <Grid.Container css={{ pl: "$6" }}>
                   <Grid xs={12} sm={4}>
                     <Text h4 css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}>
@@ -336,7 +335,7 @@ export const Content = () => (
               }}
               css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
-                <img
+                <Image
                   alt="twitter"
                   src="/twitter.svg"
                   width="34px"
@@ -370,7 +369,7 @@ export const Content = () => (
               }}
               css={{ color: "#94f9f0", bg: "#16181A", zIndex: 5, }}>
               <Card.Header>
-                <img
+                <Image
                   alt="nextui logo"
                   src="/telegram.svg"
                   width="34px"

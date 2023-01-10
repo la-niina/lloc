@@ -53,6 +53,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
               onClick={() => {
                 window.location.href = "/"
               }}
+              alt="lloc"
               src='/logo.svg' />
           </Navbar.Brand>
 
