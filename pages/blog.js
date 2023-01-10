@@ -59,7 +59,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                         enableCursorHighlight
                         activeColor="secondary"
                         hideIn="xs"
-                        variant="highlight-rounded"
+                        variant="underline"
                     >
                         <Navbar.Link href="/">features</Navbar.Link>
                         <Navbar.Link href="/community">community</Navbar.Link>

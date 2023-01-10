@@ -63,7 +63,7 @@ export const Content = () => (
                 bordered
                 labelLeft="https://"
                 labelRight=".app"
-                placeholder="iiio.vercel"
+                placeholder="lloc.vercel"
                 contentRight={
                   <SendButton>
                     <SendIcon />
