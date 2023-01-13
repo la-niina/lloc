@@ -1,25 +1,31 @@
-import Head from 'next/head'
+import Head from "next/head";
 import React from "react";
-import { Inter } from '@next/font/google'
-import { Navbar, Button, Image, Link, Text, useTheme, Avatar, Dropdown, Modal, Input, Row, Checkbox } from "@nextui-org/react";
+import { Inter } from "@next/font/google";
+import {
+  Navbar,
+  Button,
+  Image,
+  Link,
+  Text,
+  useTheme,
+  Avatar,
+  Dropdown,
+  Modal,
+  Input,
+  Row,
+  Checkbox,
+} from "@nextui-org/react";
 import { Layout } from "../compose/Navbar/Layout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
 import { icons } from "../compose/Icons.js";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { isDark } = useTheme();
 
-  const collapseItems = [
-    "features",
-    "community",
-    "blog",
-    "liencies",
-    "about",
-  ];
+  const collapseItems = ["features", "community", "blog", "liencies", "about"];
   const [visible, setVisible] = React.useState(false);
   const handler = () => setVisible(true);
   const closeHandler = () => {
@@ -30,9 +36,15 @@ export default function Home() {
     <>
       <Head>
         <title>lloc | Home</title>
-        <meta name="description" content="lloc is a start-up software company that provides a multitude of
-services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc." />
-        <meta name="keywords" content="lloc, la-nniina, la-niina, software, start-up , developer, freelancer, website , mobile , android , ios , swift" />
+        <meta
+          name="description"
+          content="lloc is a start-up software company that provides a multitude of
+services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc."
+        />
+        <meta
+          name="keywords"
+          content="lloc, la-nniina, la-niina, software, start-up , developer, freelancer, website , mobile , android , ios , swift"
+        />
         <meta name="author" content="la niina" />
         <meta name="viewer" content="lloc" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -51,10 +63,11 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
               width={30}
               height={30}
               onClick={() => {
-                window.location.href = "/"
+                window.location.href = "/";
               }}
               alt="lloc"
-              src='/logo.svg' />
+              src="/logo.svg"
+            />
           </Navbar.Brand>
 
           <Navbar.Content
@@ -64,7 +77,9 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             hideIn="xs"
             variant="underline"
           >
-            <Navbar.Link isActive href="/">features</Navbar.Link>          
+            <Navbar.Link isActive href="/">
+              features
+            </Navbar.Link>
             <Dropdown isBordered>
               <Navbar.Item>
                 <Dropdown.Button
@@ -74,7 +89,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                     px: 0,
                     dflex: "center",
                     svg: { pe: "none" },
-                    borderRadius: "30px"
+                    borderRadius: "30px",
                   }}
                   iconRight={icons.chevron}
                   ripple={false}
@@ -144,11 +159,18 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                   description="Overcome any challenge with a supporting team ready to respond."
                   icon={icons.user}
                 >
-                  +Supreme Support
+                  <a
+                    h1
+                    onClick={() => {
+                      window.location.href = "/community";
+                    }}
+                  >
+                    +Community
+                  </a>
                 </Dropdown.Item>
-
               </Dropdown.Menu>
             </Dropdown>
+
             <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
@@ -158,7 +180,14 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
 
           <Navbar.Content>
             <Navbar.Item>
-              <Button auto color="gradient" flat rounded as={Link} onClick={handler}>
+              <Button
+                auto
+                color="gradient"
+                flat
+                rounded
+                as={Link}
+                onClick={handler}
+              >
                 Sign Up
               </Button>
             </Navbar.Item>
@@ -172,11 +201,14 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             onClose={closeHandler}
           >
             <Modal.Header>
-              <Text id="modal-title" size={60}
+              <Text
+                id="modal-title"
+                size={60}
                 css={{
                   textGradient: "45deg, $blue600 -20%, $pink600 50%",
                 }}
-                weight="bold">
+                weight="bold"
+              >
                 IIo
               </Text>
             </Modal.Header>
@@ -217,30 +249,60 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
           </Modal>
 
           <Navbar.Collapse>
-
             <Navbar.CollapseItem>
-              <Link weight="bold" css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }} href="/">features</Link>
+              <Link
+                weight="bold"
+                css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}
+                href="/"
+              >
+                features
+              </Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/community">community</Link>
+              <Link
+                weight="bold"
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                onClick={() => {
+                  window.location.href = "/community";
+                }}
+              >
+                plugin
+              </Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/blog">blog</Link>
+              <Link
+                weight="bold"
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                href="/blog"
+              >
+                blog
+              </Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/liences">liences</Link>
+              <Link
+                weight="bold"
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                href="/liences"
+              >
+                liences
+              </Link>
             </Navbar.CollapseItem>
 
             <Navbar.CollapseItem>
-              <Link weight="bold" css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }} href="/about">about</Link>
+              <Link
+                weight="bold"
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                href="/about"
+              >
+                about
+              </Link>
             </Navbar.CollapseItem>
-
           </Navbar.Collapse>
         </Navbar>
       </Layout>
     </>
-  )
+  );
 }
