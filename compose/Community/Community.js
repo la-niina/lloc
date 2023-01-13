@@ -12,6 +12,7 @@ import {
   Col,
   Link,
   Input,
+  Pagination,
 } from "@nextui-org/react";
 import { SunIcon } from "./icons/SunIcon";
 import { MoonIcon } from "./icons/MoonIcon";
@@ -19,45 +20,139 @@ import { AnchorIcon } from "./icons/AnchorIcon";
 import { SearchIcon } from "./icons/SearchIcon";
 import { Box } from "./Box.js";
 
-export const Content = () => (
-  <>
-    <Spacer y={1} />
-    <Container>
-      <Row>
-        <Grid.Container>
-          <Card isHoverable 
-          css={{ p: "$6", mw: "400px" , borderRadius: "50px"}}>
-            <Card.Body css={{ p: 0 }}>
-              <Container>
-                <Grid.Container css={{ pl: "$0" , p: "0"}}>
-                  <Grid xs={12} sm={6} md={6}>
-                      <Image
-                        alt="nextui logo"
-                        src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                        width="100%"
-                        height="100%"
-                        css={{
-                          width: "100%",
-                          height: "100%",
-                        }}
-                      />
-                  </Grid>
+const list = [
+  {
+    title: "Orange",
+    img: "/images/fruit-1.jpeg",
+    price: "$5.50",
+  },
+  {
+    title: "Tangerine",
+    img: "/images/fruit-2.jpeg",
+    price: "$3.00",
+  },
+  {
+    title: "Cherry",
+    img: "/images/fruit-3.jpeg",
+    price: "$10.00",
+  },
+  {
+    title: "Lemon",
+    img: "/images/fruit-4.jpeg",
+    price: "$5.30",
+  },
+  {
+    title: "Avocado",
+    img: "/images/fruit-5.jpeg",
+    price: "$15.70",
+  },
+  {
+    title: "Lemon 2",
+    img: "/images/fruit-6.jpeg",
+    price: "$8.00",
+  },
+  {
+    title: "Banana",
+    img: "/images/fruit-7.jpeg",
+    price: "$7.50",
+  },
+  {
+    title: "Watermelon",
+    img: "/images/fruit-8.jpeg",
+    price: "$12.20",
+  },
+  {
+    title: "Watermelon",
+    img: "/images/fruit-8.jpeg",
+    price: "$12.20",
+  },
+];
 
-                  <Grid xs={12} sm={6} md={6}>
-                    <Text>
-                      Make beautiful websites regardless of your design
-                      experience.
-                    </Text>
-                  </Grid>
-                </Grid.Container>
-              </Container>
-            </Card.Body>
-          </Card>
+export const Content = () => {
+  return (
+    <>
+      <Spacer y={1} />
+      <Container>
+        <Grid.Container gap={2}>
+          <Grid md>
+            <Input
+              clearable
+              contentLeft={
+                <SearchIcon fill="var(--nextui-colors-accents6)" size={16} />
+              }
+              contentLeftStyling={false}
+              css={{
+                w: "100%",
+                "@xsMax": {
+                  mw: "300px",
+                },
+                "& .nextui-input-content--left": {
+                  h: "100%",
+                  ml: "$4",
+                  dflex: "center",
+                },
+              }}
+              placeholder="Search..."
+            />
+          </Grid>
         </Grid.Container>
-      </Row>
-    </Container>
+      </Container>
 
-    <Spacer y={1} />
-    <Spacer y={1} />
-  </>
-);
+      <Spacer y={1} />
+
+      <Container>
+        <Button.Group size="sm" color="gradient" bordered flat>
+          <Button>Latest</Button>
+          <Button>Popular</Button>
+          <Text> | </Text>
+          <Button>Premium</Button>
+          <Button>Free</Button>
+        </Button.Group>
+      </Container>
+    
+      <Spacer y={1} />
+
+      <Container>
+        <Grid.Container gap={2} justify="flex-start">
+          {list.map((item, index) => (
+            <Grid xs={5} sm={3} md={3} key={index}>
+              <Card isPressable>
+                <Card.Image
+                  src={"https://nextui.org" + item.img}
+                  objectFit="cover"
+                  width="100%"
+                  height={250}
+                  alt={item.title}
+                />
+                <Card.Footer css={{ justifyItems: "flex-start" }}>
+                  <Row wrap="wrap" justify="space-between" align="center">
+                    <Text b>{item.title}</Text>
+                    <Text
+                      css={{
+                        color: "$accents7",
+                        fontWeight: "$semibold",
+                        fontSize: "$sm",
+                      }}
+                    >
+                      {item.price}
+                    </Text>
+                  </Row>
+                </Card.Footer>
+              </Card>
+            </Grid>
+          ))}
+        </Grid.Container>
+      </Container>
+
+      <Spacer y={1} />
+      <Container md justify="flex-end">
+        <Grid.Container justify="flex-end">
+          Page <Pagination size="sm" animated={false} total={5} initialPage={1} />
+        </Grid.Container>
+      </Container>
+
+      <Spacer y={1} />
+      <Spacer y={1} />
+    </>
+  );
+};
