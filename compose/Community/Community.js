@@ -29,16 +29,18 @@ export const Content = () => (
           css={{ p: "$6", mw: "400px" , borderRadius: "50px"}}>
             <Card.Body css={{ p: 0 }}>
               <Container>
-                <Grid.Container css={{ pl: "$6" }}>
+                <Grid.Container css={{ pl: "$0" , p: "0"}}>
                   <Grid xs={12} sm={6} md={6}>
-                    <Card.Header>
                       <Image
                         alt="nextui logo"
                         src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
                         width="100%"
                         height="100%"
+                        css={{
+                          width: "100%",
+                          height: "100%",
+                        }}
                       />
-                    </Card.Header>
                   </Grid>
 
                   <Grid xs={12} sm={6} md={6}>

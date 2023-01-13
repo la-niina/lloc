@@ -74,6 +74,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                     px: 0,
                     dflex: "center",
                     svg: { pe: "none" },
+                    borderRadius: "30px"
                   }}
                   iconRight={icons.chevron}
                   ripple={false}
@@ -109,6 +110,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 >
                   Autoscaling
                 </Dropdown.Item>
+
                 <Dropdown.Item
                   key="usage_metrics"
                   showFullDescription
@@ -117,6 +119,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 >
                   Usage Metrics
                 </Dropdown.Item>
+
                 <Dropdown.Item
                   key="production_ready"
                   showFullDescription
@@ -125,6 +128,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 >
                   Production Ready
                 </Dropdown.Item>
+
                 <Dropdown.Item
                   key="99_uptime"
                   showFullDescription
@@ -133,6 +137,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 >
                   +99% Uptime
                 </Dropdown.Item>
+
                 <Dropdown.Item
                   key="supreme_support"
                   showFullDescription
@@ -141,6 +146,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 >
                   +Supreme Support
                 </Dropdown.Item>
+
               </Dropdown.Menu>
             </Dropdown>
             <Navbar.Link href="/blog">blog</Navbar.Link>
