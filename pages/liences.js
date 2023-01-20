@@ -98,7 +98,6 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                   <Avatar
                     bordered
                     as="button"
-                    color="secondary"
                     size="md"
                     src="https://avatars.githubusercontent.com/u/118225191?v=4"
                   />
