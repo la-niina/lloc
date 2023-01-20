@@ -85,7 +85,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             </Navbar.Link>
           </Navbar.Content>
           <Navbar.Toggle showIn="xs" />
-          <Navbar.Content
+           <Navbar.Content
             css={{
               "@xs": {
                 w: "12%",
@@ -101,7 +101,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                     as="button"
                     color="secondary"
                     size="md"
-                    src="/logo.svg"
+                    src="https://avatars.githubusercontent.com/u/118225191?v=4"
                   />
                 </Dropdown.Trigger>
               </Navbar.Item>

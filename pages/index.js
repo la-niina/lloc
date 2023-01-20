@@ -79,7 +79,9 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             hideIn="xs"
             variant="underline"
           >
-            <Navbar.Link isActive href="/">features</Navbar.Link>
+            <Navbar.Link isActive href="/">
+              features
+            </Navbar.Link>
             <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
@@ -102,7 +104,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                     as="button"
                     color="secondary"
                     size="md"
-                    src="/logo.svg"
+                    src="https://avatars.githubusercontent.com/u/118225191?v=4"
                   />
                 </Dropdown.Trigger>
               </Navbar.Item>
@@ -111,16 +113,11 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 color="secondary"
                 onAction={(actionKey) => console.log({ actionKey })}
               >
-                <Dropdown.Item
-                  key="profile"
-                  css={{ height: "$18" }}
-                >
-                  <Text b color="inherit" css={{ d: "flex" }}
-                  onClick={handler}>
+                <Dropdown.Item key="profile" css={{ height: "$18" }}>
+                  <Text b color="inherit" css={{ d: "flex" }} onClick={handler}>
                     Signed in as
                   </Text>
-                  <Text b color="inherit" css={{ d: "flex" }}
-                  onClick={handler}>
+                  <Text b color="inherit" css={{ d: "flex" }} onClick={handler}>
                     zoey@example.com
                   </Text>
                 </Dropdown.Item>
