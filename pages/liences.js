@@ -77,84 +77,6 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             variant="underline"
           >
             <Navbar.Link href="/">features</Navbar.Link>
-            <Dropdown isBordered>
-              <Navbar.Item>
-                <Dropdown.Button
-                  auto
-                  light
-                  css={{
-                    px: 0,
-                    dflex: "center",
-                    svg: { pe: "none" },
-                  }}
-                  iconRight={icons.chevron}
-                  ripple={false}
-                >
-                  community
-                </Dropdown.Button>
-              </Navbar.Item>
-              <Dropdown.Menu
-                aria-label="ACME features"
-                css={{
-                  $$dropdownMenuWidth: "340px",
-                  $$dropdownItemHeight: "70px",
-                  "& .nextui-dropdown-item": {
-                    py: "$4",
-                    // dropdown item left icon
-                    svg: {
-                      color: "$secondary",
-                      mr: "$4",
-                    },
-                    // dropdown item title
-                    "& .nextui-dropdown-item-content": {
-                      w: "100%",
-                      fontWeight: "$semibold",
-                    },
-                  },
-                }}
-              >
-                <Dropdown.Item
-                  key="autoscaling"
-                  showFullDescription
-                  description="ACME scales apps to meet user demand, automagically, based on load."
-                  icon={icons.scale}
-                >
-                  Autoscaling
-                </Dropdown.Item>
-                <Dropdown.Item
-                  key="usage_metrics"
-                  showFullDescription
-                  description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-                  icon={icons.activity}
-                >
-                  Usage Metrics
-                </Dropdown.Item>
-                <Dropdown.Item
-                  key="production_ready"
-                  showFullDescription
-                  description="ACME runs on ACME, join us and others serving requests at web scale."
-                  icon={icons.flash}
-                >
-                  Production Ready
-                </Dropdown.Item>
-                <Dropdown.Item
-                  key="99_uptime"
-                  showFullDescription
-                  description="Applications stay on the grid with high availability and high uptime guarantees."
-                  icon={icons.server}
-                >
-                  +99% Uptime
-                </Dropdown.Item>
-                <Dropdown.Item
-                  key="supreme_support"
-                  showFullDescription
-                  description="Overcome any challenge with a supporting team ready to respond."
-                  icon={icons.user}
-                >
-                  +Supreme Support
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
             <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link isActive href="/liences">
               liences
@@ -162,19 +84,63 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             <Navbar.Link href="/about">about</Navbar.Link>
           </Navbar.Content>
           <Navbar.Toggle showIn="xs" />
-          <Navbar.Content>
-            <Navbar.Item>
-              <Button
-                auto
-                flat
-                rounded
-                color="gradient"
-                as={Link}
-                onClick={handler}
+          <Navbar.Content
+            css={{
+              "@xs": {
+                w: "12%",
+                jc: "flex-end",
+              },
+            }}
+          >
+            <Dropdown placement="bottom-right">
+              <Navbar.Item>
+                <Dropdown.Trigger>
+                  <Avatar
+                    bordered
+                    as="button"
+                    color="secondary"
+                    size="md"
+                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                  />
+                </Dropdown.Trigger>
+              </Navbar.Item>
+              <Dropdown.Menu
+                aria-label="User menu actions"
+                color="secondary"
+                onAction={(actionKey) => console.log({ actionKey })}
               >
-                Sign Up
-              </Button>
-            </Navbar.Item>
+                <Dropdown.Item
+                  key="profile"
+                  css={{ height: "$18" }}
+                >
+                  <Text b color="inherit" css={{ d: "flex" }}
+                  onClick={handler}>
+                    Signed in as
+                  </Text>
+                  <Text b color="inherit" css={{ d: "flex" }}
+                  onClick={handler}>
+                    zoey@example.com
+                  </Text>
+                </Dropdown.Item>
+                <Dropdown.Item key="settings" withDivider>
+                  My Settings
+                </Dropdown.Item>
+                <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
+                <Dropdown.Item key="analytics" withDivider>
+                  Analytics
+                </Dropdown.Item>
+                <Dropdown.Item key="system">System</Dropdown.Item>
+                <Dropdown.Item key="configurations">
+                  Configurations
+                </Dropdown.Item>
+                <Dropdown.Item key="help_and_feedback" withDivider>
+                  Help & Feedback
+                </Dropdown.Item>
+                <Dropdown.Item key="logout" withDivider color="error">
+                  Log Out
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Navbar.Content>
 
           <Modal
