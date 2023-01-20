@@ -19,6 +19,7 @@ import { Layout } from "../compose/Navbar/Layout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
 import { icons } from "../compose/Icons.js";
+import App from "next/app.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function Home() {
     setVisible(false);
     console.log("closed");
   };
+
   return (
     <>
       <Head>
@@ -83,7 +85,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             <Navbar.Link href="/about">about</Navbar.Link>
           </Navbar.Content>
           <Navbar.Toggle showIn="xs" />
-          
+
           <Navbar.Content
             css={{
               "@xs": {
