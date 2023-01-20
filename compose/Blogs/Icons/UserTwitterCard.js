@@ -17,7 +17,7 @@ export const UserTwitterCard = () => {
             <Row justify="space-around" align="center">
                 <Col span={8}>
                     <User
-                        src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                        src="/logo.svg"
                         name="Ariana Wattson"
                         description="UI/UX Designer"
                         css={{ px: 0 }}

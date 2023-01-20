@@ -99,7 +99,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                     as="button"
                     color="secondary"
                     size="md"
-                    src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                    src="/logo.svg"
                   />
                 </Dropdown.Trigger>
               </Navbar.Item>
