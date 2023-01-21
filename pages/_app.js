@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import { Analytics } from '@vercel/analytics/react';
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 
 const theme = createTheme({
@@ -47,6 +48,7 @@ export default function App({ Component, pageProps }) {
   return (
     <NextUIProvider theme={theme}>
       <Component {...pageProps} />
+      <Analytics />
     </NextUIProvider>
   );
 }
