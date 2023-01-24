@@ -27,36 +27,22 @@ export const Content = () => {
   const { setVisible, bindings } = useModal();
   const list = [
     {
-      title: "Next UI",
+      title: "Googling Users",
       sub_title: "Next UI",
       url_title: "Google",
       img: "https://avatars.githubusercontent.com/u/86160567?s=200&v=4",
       read_me: "Make beautiful websites regardless of your design experience.",
       url_link: "https://www.google.com/",
+      redirect: "/",
     },
     {
-      title: "Next UI",
+      title: "Googling Users",
       sub_title: "Next UI",
       url_title: "Google",
       img: "https://avatars.githubusercontent.com/u/86160567?s=200&v=4",
       read_me: "Make beautiful websites regardless of your design experience.",
       url_link: "https://www.google.com/",
-    },
-    {
-      title: "Next UI",
-      sub_title: "Next UI",
-      url_title: "Google",
-      img: "https://avatars.githubusercontent.com/u/86160567?s=200&v=4",
-      read_me: "Make beautiful websites regardless of your design experience.",
-      url_link: "https://www.google.com/",
-    },
-    {
-      title: "Next UI",
-      sub_title: "Next UI",
-      url_title: "Google",
-      img: "https://avatars.githubusercontent.com/u/86160567?s=200&v=4",
-      read_me: "Make beautiful websites regardless of your design experience.",
-      url_link: "https://www.google.com/",
+      redirect: "/",
     },
   ];
 
@@ -122,7 +108,14 @@ export const Content = () => {
         <Grid.Container gap={2} justify="flex-start">
           {list.map((item, index) => (
             <Grid xs={4} key={index}>
-              <Card css={{ mw: "400px" }} isHoverable isPressable>
+              <Card
+                css={{ mw: "400px" }}
+                isHoverable
+                isPressable
+                onClick={() => {
+                  window.location.href = item.redirect;
+                }}
+              >
                 <Card.Header>
                   <Image
                     alt={item.title}
@@ -145,22 +138,58 @@ export const Content = () => {
                   <Text>{item.read_me}</Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Button
-                    flat
-                    auto
-                    rounded
-                    css={{ color: "#94f9f0", bg: "#94f9f026" }}
-                  >
-                    {" "}
-                    <Link
-                      icon
-                      color="primary"
-                      target="_blank"
-                      href={item.url_link}
+                  <Row>
+                    <Button
+                      flat
+                      auto
+                      rounded
+                      css={{ color: "#94f9f0", bg: "#94f9f026" }}
                     >
-                      {item.url_title}
-                    </Link>
-                  </Button>
+                      {" "}
+                      <Link
+                        icon
+                        color="primary"
+                        target="_blank"
+                        href={item.url_link}
+                      >
+                        {item.url_title}
+                      </Link>
+                    </Button>
+
+                    <Text
+                      flat
+                      auto
+                      rounded
+                      css={{ color: "#94f9f0", margin: "5px" }}
+                    >
+                      {" "}
+                      <Link
+                        icon
+                        color="primary"
+                        target="_blank"
+                        href={item.url_link}
+                      >
+                        {item.url_title}
+                      </Link>
+                    </Text>
+
+                    <Text
+                      flat
+                      auto
+                      rounded
+                      css={{ color: "#94f9f0", margin: "5px" }}
+                    >
+                      {" "}
+                      <Link
+                        icon
+                        color="primary"
+                        target="_blank"
+                        href={item.url_link}
+                      >
+                        {item.url_title}
+                      </Link>
+                    </Text>
+                  </Row>
                 </Card.Footer>
               </Card>
             </Grid>
