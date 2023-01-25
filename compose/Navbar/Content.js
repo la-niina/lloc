@@ -242,52 +242,104 @@ export const Content = () => (
 
     <Spacer y={1} />
 
-    <Container>
-      <Grid.Container gap={1}  justify="center" alignContent="center"
-        css={{
-          display: "flex",
-          justifyContent: "center"
-        }}>
-        <Grid  xs={6} sm={2}>
-          <Col>
-            <Text
+    <Container
+      css={{
+        display: "flex",
+        justifyContent: "center",
+      }}
+    >
+      <Row
+        justify="center"
+        css={{ top: "$15", display: "flex", justifyContent: "center" }}
+      >
+        <Grid.Container gap={2} justify="center">
+          <Grid xs={6} sm={4}>
+            <Col>
+              <Text
+                h1
+                size={60}
+                css={{
+                  textGradient: "45deg, $purple600 -20%, $pink600 100%",
+                }}
+                weight="bold"
+              >
+                60M+
+              </Text>
+              <Text>Downloads</Text>
+            </Col>
+          </Grid>
+
+          <Grid xs={6} sm={4}>
+            <Col>
+              <Text
+                h1
+                size={60}
+                css={{
+                  textGradient: "45deg, $purple600 -20%, $pink600 100%",
+                }}
+                weight="bold"
+              >
+                24
+              </Text>
+              <Text>Apps</Text>
+            </Col>
+          </Grid>
+
+          <Grid xs={6} sm={4}>
+            <Col>
+              <Text
+                h1
+                size={60}
+                css={{
+                  textGradient: "45deg, $purple600 -20%, $pink600 100%",
+                }}
+                weight="bold"
+              >
+                5.6
+              </Text>
+              <Text>Average Rating</Text>
+            </Col>
+          </Grid>
+        </Grid.Container>
+      </Row>
+    </Container>
+
+    <Spacer y={1} />
+
+    <Container
+      css={{
+        display: "flex",
+        justifyContent: "left",
+      }}
+    >
+      <Grid justify="flex-start">
+        <Col>
+          <Text
             h1
             size={60}
-            css={{
-              textGradient: "45deg, $purple600 -20%, $pink600 100%",
-            }}
-            weight="bold">60M+</Text>
-            <Text>Downloads</Text>
-          </Col>
-        </Grid>
+            css={{ textGradient: "45deg, $blue600 -20%, $pink600 50%" }}
+            weight="bold"
+          >
+            Discover the difference.
+          </Text>
 
-        <Grid xs={6} sm={2}>
-          <Col>
-            <Text
-            h1
-            size={60}
-            css={{
-              textGradient: "45deg, $purple600 -20%, $pink600 100%",
-            }}
-            weight="bold">24</Text>
-            <Text>Apps</Text>
-          </Col>
-        </Grid>
+          <Row>
+            <Grid.Container gap={2} justify="flex-start">
+              <Grid xs={12} sm={4}>
+                <Button flat rounded color="gradient" auto>
+                Read our mission
+                </Button>
+              </Grid>
 
-        <Grid xs={6} sm={2}>
-          <Col>
-            <Text
-            h1
-            size={60}
-            css={{
-              textGradient: "45deg, $purple600 -20%, $pink600 100%",
-            }}
-            weight="bold">5.6</Text>
-            <Text>Average Rating</Text>
-          </Col>
-        </Grid>
-
-      </Grid.Container>
+              <Grid xs={12} sm={4}>
+                <Button flat rounded color="default" auto>
+                Support this project
+                </Button>
+              </Grid>
+            </Grid.Container>
+          </Row>
+        </Col>
+      </Grid>
     </Container>
 
     <Container>
