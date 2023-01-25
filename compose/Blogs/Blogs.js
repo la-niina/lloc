@@ -23,9 +23,9 @@ import { Box } from "./Box.js";
 import { UserTwitterCard } from "./Icons/UserTwitterCard";
 import { UserInterface } from "./Icons/UserInterface";
 import { DeleteUser } from "./Icons/DeleteUser";
+import { URL } from "next/dist/compiled/@edge-runtime/primitives/url.js";
 
 export const Content = () => {
-  const { setVisible, bindings } = useModal();
   const list = [
     {
       title: "Googling Users",
