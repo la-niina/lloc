@@ -14,6 +14,7 @@ import {
   Loading,
   Col,
   Link,
+  Progress,
   Popover,
   User,
   Input,
@@ -107,7 +108,7 @@ export const Content = () => {
       <Container>
         <Grid.Container gap={2} justify="flex-start">
           {list.map((item, index) => (
-            <Grid xs={4} key={index}>
+            <Grid xs={12} sm={4} key={index}>
               <Card
                 css={{ mw: "400px" }}
                 isHoverable
@@ -182,7 +183,7 @@ export const Content = () => {
                       {" "}
                       <Link
                         icon
-                        color="primary"
+                        color="default"
                         target="_blank"
                         href={item.url_link}
                       >
@@ -194,6 +195,126 @@ export const Content = () => {
               </Card>
             </Grid>
           ))}
+        </Grid.Container>
+      </Container>
+
+      <Spacer y={1} />
+
+      <Container>
+        <Grid.Container>
+          <Grid xs={12} sm={6} justify="flex-start">
+            <Col>
+              <Text>Lets Talk</Text>
+              <Text h3>Let’s stay in touch!</Text>
+            </Col>
+          </Grid>
+
+          <Grid xs={12} sm={6} justify="flex-end">
+            <Button
+              flat
+              rounded
+              size="md"
+              color="gradient"
+              auto
+              css={{
+                color: "#fff",
+              }}
+            >
+              contact
+            </Button>
+          </Grid>
+        </Grid.Container>
+      </Container>
+
+      <Spacer y={1} />
+
+      <Container>
+        <Grid.Container xs={12} sm={12}>
+          <Grid>
+            <Progress color="secondary" size="xs" value={100} />
+          </Grid>
+        </Grid.Container>
+      </Container>
+
+      <Container>
+        <Grid.Container>
+          <Grid xs={12} sm={6} justify="flex-start">
+            <Col>
+              <Text>
+                A group of simple, open source Android apps without ads and
+                unnecessary permissions, with customizable colors.
+              </Text>
+            </Col>
+          </Grid>
+        </Grid.Container>
+      </Container>
+
+      <Spacer y={1} />
+      <Spacer y={1} />
+
+      <Container>
+        <Grid.Container>
+          <Grid xs={12} sm={6} justify="flex-start">
+            <Image
+              alt="twitter"
+              src="/logo_autum.png"
+              height="35px"
+              width="35px"
+              objectFit="cover"
+            />
+
+            <Container>
+              <Col>
+                <Text>Replacing your Android apps one by one since 2016.</Text>
+                <Text>Copyright © 2023, All Rights Reserved.</Text>
+              </Col>
+            </Container>
+          </Grid>
+
+          <Grid xs={12} sm={6} justify="flex-end">
+            <Grid justify="center">
+              <Row justify="center">
+                <Grid xs={12} sm={6} gap={2} justify="center">
+                  <Image
+                    alt="icon "
+                    height="35px"
+                    width="100%"
+                    src="/icon-socials.svg"
+                  />
+                </Grid>
+                <Grid xs={12} sm={6} gap={2} justify="center">
+                  <Image
+                    alt="twitter"
+                    src="/telegram.svg"
+                    height="35px"
+                    width="35px"
+                    objectFit="cover"
+                  />
+                  <Image
+                    alt="twitter"
+                    src="/twitter.svg"
+                    height="35px"
+                    width="35px"
+                    objectFit="cover"
+                  />
+                  <Image
+                    alt="twitter"
+                    src="/github.svg"
+                    height="35px"
+                    width="35px"
+                    objectFit="cover"
+                  />
+                  <Image
+                    alt="twitter"
+                    src="/gmail.svg"
+                    height="35px"
+                    width="35px"
+                    objectFit="cover"
+                  />
+                </Grid>
+              </Row>
+            </Grid>
+          </Grid>
         </Grid.Container>
       </Container>
 
