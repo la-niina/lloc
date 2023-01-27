@@ -17,8 +17,13 @@ import {
 import { Layout } from "../compose/Navbar/Layout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
-import { emailpasswordAuth } from "./firebase/authentification";
-import toast, { Toaster } from "react-hot-toast";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+import firebase from "./firebase";
 
 export default function Home() {
   const { isDark } = useTheme();
@@ -30,29 +35,17 @@ export default function Home() {
     console.log("closed");
   };
 
-  const epAuth = () => {
-    emailpasswordAuth()
-      .then((email, pswd) => {
-        //
+  const auth = getAuth(firebase);
+  const emailpasswordAuth = () =>
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
       })
       .catch((error) => {
-        toast(error.message, {
-          icon: "⛔️",
-        });
+        const errorCode = error.code;
+        const errorMessage = error.message;
       });
-  };
-
-  const createepAuth = () => {
-    emailpasswordAuth()
-      .then(() => {
-        //
-      })
-      .catch((error) => {
-        toast(error.message, {
-          icon: "⛔️",
-        });
-      });
-  };
+  const logOut = () => signOut(auth);
 
   return (
     <>
