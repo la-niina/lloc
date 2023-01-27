@@ -5,7 +5,7 @@ import {
   signOut,
 } from "firebase/auth";
 import firebase from "./firebase";
-export const auth = getAuth(firebase);
+const auth = getAuth(firebase);
 const emailpasswordAuth = () =>
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -16,5 +16,5 @@ const emailpasswordAuth = () =>
       const errorMessage = error.message;
     });
 const logOut = () => signOut(auth);
-
-export { emailpasswordAuth, logOut };
+// eslint-disable-next-line import/no-anonymous-default-export
+export default{ emailpasswordAuth, logOut };
