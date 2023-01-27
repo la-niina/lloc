@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from "react";
-import { Inter } from "@next/font/google";
 import {
   Navbar,
   Button,
@@ -18,20 +17,41 @@ import {
 import { Layout } from "../compose/Navbar/Layout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
-import { icons } from "../compose/Icons.js";
-import App from "next/app.js";
-
-const inter = Inter({ subsets: ["latin"] });
+import { emailpasswordAuth } from "./firebase/authentification";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function Home() {
   const { isDark } = useTheme();
 
-  const collapseItems = ["features", "community", "blog", "liencies", "about"];
   const [visible, setVisible] = React.useState(false);
   const handler = () => setVisible(true);
   const closeHandler = () => {
     setVisible(false);
     console.log("closed");
+  };
+
+  const epAuth = () => {
+    emailpasswordAuth()
+      .then((email, pswd) => {
+        //
+      })
+      .catch((error) => {
+        toast(error.message, {
+          icon: "⛔️",
+        });
+      });
+  };
+
+  const createepAuth = () => {
+    emailpasswordAuth()
+      .then(() => {
+        //
+      })
+      .catch((error) => {
+        toast(error.message, {
+          icon: "⛔️",
+        });
+      });
   };
 
   return (
@@ -167,6 +187,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 fullWidth
                 color="primary"
                 size="lg"
+                id="email"
                 placeholder="Email"
                 contentLeft={<Mail fill="currentColor" />}
               />
@@ -176,6 +197,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 fullWidth
                 color="primary"
                 size="lg"
+                id="pwsd"
                 placeholder="Password"
                 contentLeft={<Password fill="currentColor" />}
               />
