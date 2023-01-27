@@ -23,7 +23,7 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
-import firebase from "./firebase";
+import firebase from "../compose/firebase";
 
 export default function Home() {
   const { isDark } = useTheme();
