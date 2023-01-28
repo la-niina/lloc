@@ -93,8 +93,7 @@ export const Content = () => {
                 isHoverable
                 isPressable
                 onClick={() => {
-                  window.location.href =
-                    "https://www.youtube.com/watch?v=" + item.url_link;
+                  // window.location.href = "https://www.youtube.com/watch?v=" + item.url_link;
                 }}
               >
                 <Card.Body css={{ p: 0 }}>

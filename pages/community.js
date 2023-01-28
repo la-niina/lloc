@@ -213,13 +213,24 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
               </Link>
             </Navbar.CollapseItem>
 
-            <Navbar.CollapseItem>
+             <Navbar.CollapseItem>
               <Link
                 weight="bold"
                 css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
                 href="/blog"
               >
                 blog
+              </Link>
+            </Navbar.CollapseItem>
+
+
+            <Navbar.CollapseItem>
+              <Link
+                weight="bold"
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                href="/courses"
+              >
+                courses
               </Link>
             </Navbar.CollapseItem>
 
