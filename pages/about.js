@@ -79,6 +79,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             <Navbar.Link href="/">features</Navbar.Link>
 
             <Navbar.Link href="/blog">blog</Navbar.Link>
+            <Navbar.Link href="/courses">courses</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link isActive href="/about">
               about

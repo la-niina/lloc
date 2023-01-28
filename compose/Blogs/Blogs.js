@@ -19,13 +19,14 @@ import {
   User,
   Input,
 } from "@nextui-org/react";
+import React from 'react'
 import { Box } from "./Box.js";
 import { UserTwitterCard } from "./Icons/UserTwitterCard";
 import { UserInterface } from "./Icons/UserInterface";
 import { DeleteUser } from "./Icons/DeleteUser";
 import { URL } from "next/dist/compiled/@edge-runtime/primitives/url.js";
 
-export const Content = () => {
+export const Content= () => {
   const list = [
     {
       title: "Googling Users",

@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import {
   Navbar,
   Button,
+  useModal,
   Link,
   Image,
   Text,
@@ -15,14 +16,14 @@ import {
   Row,
   Checkbox,
 } from "@nextui-org/react";
-import { Layout } from "../compose/liences/LiencesLayout.js";
+import { Layout } from "../compose/Courses/CoursesLayout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
 import { icons } from "../compose/Icons.js";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Liences() {
+export default function Courses() {
   const { isDark } = useTheme();
 
   const collapseItems = ["features", "community", "blog", "liencies", "about"];
@@ -35,7 +36,7 @@ export default function Liences() {
   return (
     <>
       <Head>
-        <title>lloc | Liences</title>
+        <title>lloc | Blogs</title>
         <meta
           name="description"
           content="lloc is a start-up software company that provides a multitude of
@@ -77,13 +78,15 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             variant="underline"
           >
             <Navbar.Link href="/">features</Navbar.Link>
-            <Navbar.Link href="/blog">blog</Navbar.Link>
-            <Navbar.Link href="/courses">courses</Navbar.Link>
-            <Navbar.Link isActive href="/liences">
-              liences
+
+            <Navbar.Link href="/blog">
+              blog
             </Navbar.Link>
+            <Navbar.Link isActive href="/courses">courses</Navbar.Link>
+            <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
           </Navbar.Content>
+
           <Navbar.Toggle showIn="xs" />
            <Navbar.Content
             css={{
@@ -217,7 +220,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             <Navbar.CollapseItem>
               <Link
                 weight="bold"
-                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}
                 href="/blog"
               >
                 blog
@@ -227,7 +230,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             <Navbar.CollapseItem>
               <Link
                 weight="bold"
-                css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
                 href="/liences"
               >
                 liences
