@@ -109,6 +109,7 @@ export const Content = () => {
                       pauseVideo: true,
                     }}
                     rounded
+                    flat
                     css={{
                       borderRadius: "30px",
                     }}
