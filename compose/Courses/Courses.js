@@ -21,54 +21,68 @@ import {
 } from "@nextui-org/react";
 import React from "react";
 import YouTube from "react-youtube";
+import { SearchIcon } from "./SearchIcon.js";
 
 export const Content = () => {
   const list = [
     {
       title: "NextJS + Firebase V9 Authentication tutorial",
-      read_me: "Let's look at how can we add Authentication with Firebase in a Next.js project...",
+      read_me:
+        "Let's look at how can we add Authentication with Firebase in a Next.js project...",
       url_link: "ZmpO65DhRN0",
     },
     {
-      title: "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
+      title:
+        "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
       read_me:
         "📬 Do you want DAILY coding problems sent DIRECTLY to your Inbox? (with solutions the next day)...",
       url_link: "6aP9nyTcd44",
     },
     {
-      title: "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
+      title:
+        "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
       read_me:
         "📬 Do you want DAILY coding problems sent DIRECTLY to your Inbox? (with solutions the next day)...",
       url_link: "6aP9nyTcd44",
     },
     {
-      title: "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
+      title:
+        "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
       read_me:
         "📬 Do you want DAILY coding problems sent DIRECTLY to your Inbox? (with solutions the next day)...",
       url_link: "6aP9nyTcd44",
     },
     {
-      title: "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
+      title:
+        "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
       read_me:
         "📬 Do you want DAILY coding problems sent DIRECTLY to your Inbox? (with solutions the next day)...",
       url_link: "6aP9nyTcd44",
     },
     {
-      title: "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
+      title:
+        "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
       read_me:
         "📬 Do you want DAILY coding problems sent DIRECTLY to your Inbox? (with solutions the next day)...",
       url_link: "6aP9nyTcd44",
     },
     {
-      title: "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
+      title:
+        "The Ultimate NEXT.JS 13 Tutorial (Complete Walkthrough w/ Examples)",
       read_me:
         "📬 Do you want DAILY coding problems sent DIRECTLY to your Inbox? (with solutions the next day)...",
       url_link: "6aP9nyTcd44",
-    }
+    },
   ];
 
   return (
     <>
+      <Container>
+        <Grid.Container gap={2} justify="flex-start">
+          
+        </Grid.Container>
+      </Container>
+
       <Container>
         <Grid.Container gap={2} justify="flex-start">
           {list.map((item, index) => (
@@ -80,7 +94,7 @@ export const Content = () => {
                 isPressable
                 onClick={() => {
                   window.location.href =
-                    "https://www.youtube.com/watch?v="+item.url_link;
+                    "https://www.youtube.com/watch?v=" + item.url_link;
                 }}
               >
                 <Card.Body css={{ p: 0 }}>
@@ -115,17 +129,17 @@ export const Content = () => {
                   }}
                 >
                   <Grid>
-                    <Text h3
+                    <Text
+                      h3
                       css={{
                         textGradient: "45deg, $blue600 -20%, $pink600 50%",
                       }}
-                     size={16}
-                     weight="bold">
+                      size={16}
+                      weight="bold"
+                    >
                       {item.title}
                     </Text>
-                    <Text>
-                      {item.read_me}
-                    </Text>
+                    <Text>{item.read_me}</Text>
                   </Grid>
                 </Card.Footer>
               </Card>
