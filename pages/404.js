@@ -1,13 +1,6 @@
 import Head from "next/head";
 import React from "react";
-import { Inter } from "@next/font/google";
-import {
-  Button,
-  Image,
-  Link,
-  Text,
-  useTheme,
-} from "@nextui-org/react";
+import { Button, Image, Link, Text, useTheme } from "@nextui-org/react";
 import { Layout } from "../compose/404/404Layout";
 
 export default function Home() {
@@ -31,9 +24,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-      <Layout>
-      
-      </Layout>
+      <Layout></Layout>
     </>
   );
 }

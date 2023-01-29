@@ -19,34 +19,43 @@ import {
   User,
   Input,
 } from "@nextui-org/react";
-import React from 'react'
-import { Box } from "./Box.js";
-import { UserTwitterCard } from "./Icons/UserTwitterCard";
-import { UserInterface } from "./Icons/UserInterface";
-import { DeleteUser } from "./Icons/DeleteUser";
-import { URL } from "next/dist/compiled/@edge-runtime/primitives/url.js";
+import React from "react";
 
-export const Content= () => {
+export const Content = () => {
   const list = [
     {
-      title: "Googling Users",
-      sub_title: "Next UI",
-      url_title: "Google",
-      img: "https://avatars.githubusercontent.com/u/86160567?s=200&v=4",
-      read_me: "Make beautiful websites regardless of your design experience.",
-      url_link: "https://www.google.com/",
-      redirect: "/",
+      title: "dribbble",
+      sub_title: "Login / Register - Mobile App",
+      img: "https://cdn.dribbble.com/users/3894633/screenshots/15889044/media/cb1be7f656b2f2337d9fbfd935fb78c4.png",
+      redirect: "https://cdn.dribbble.com/users/3894633/screenshots/15889044/media/cb1be7f656b2f2337d9fbfd935fb78c4.png",
     },
     {
-      title: "Googling Users",
-      sub_title: "Next UI",
-      url_title: "Google",
-      img: "https://avatars.githubusercontent.com/u/86160567?s=200&v=4",
-      read_me: "Make beautiful websites regardless of your design experience.",
-      url_link: "https://www.google.com/",
-      redirect: "/",
+      title: "dribbble",
+      sub_title: "Street Assets 🌞🌴🔥",
+      img: "https://cdn.dribbble.com/users/999849/screenshots/20503976/media/3706af6e5ff1740a69cf51ba7ba704b4.png",
+      redirect: "https://cdn.dribbble.com/users/999849/screenshots/20503976/media/3706af6e5ff1740a69cf51ba7ba704b4.png",
+    },
+    {
+      title: "dribbble",
+      sub_title: "Ecommerce app - Mobile App",
+      img: "https://cdn.dribbble.com/userupload/4407453/file/original-ea78a92e449240adb154239a6578d99f.jpg?compress=1&resize=1024x768",
+      redirect: "https://cdn.dribbble.com/userupload/4407453/file/original-ea78a92e449240adb154239a6578d99f.jpg?compress=1&resize=1024x768",
+    },
+    {
+      title: "dribbble",
+      sub_title: "E/D Mobile Version",
+      img: "https://cdn.dribbble.com/userupload/3899021/file/original-05b464f4fb3f16465792ba0f042470c0.png?compress=1&resize=1024x768",
+      redirect: "https://cdn.dribbble.com/userupload/3899021/file/original-05b464f4fb3f16465792ba0f042470c0.png?compress=1&resize=1024x768",
+    },
+    {
+      title: "dribbble",
+      sub_title: "File manager mobile app",
+      img: "https://cdn.dribbble.com/users/7476807/screenshots/20000207/media/5b431a62af52d169cd4918af64922586.png",
+      redirect: "https://cdn.dribbble.com/users/7476807/screenshots/20000207/media/5b431a62af52d169cd4918af64922586.png",
     },
   ];
+
+  const { setVisible, bindings } = useModal();
 
   return (
     <>
@@ -99,7 +108,7 @@ export const Content= () => {
                   marginBottom: "10px",
                 }}
               >
-                Get Started
+                UI/UX Concepts below
               </Button>
             </Grid>
           </Grid.Container>
@@ -107,96 +116,72 @@ export const Content= () => {
       </Container>
 
       <Container>
-        <Grid.Container gap={2} justify="flex-start">
-          {list.map((item, index) => (
-            <Grid xs={12} sm={4} key={index}>
-              <Card
-                css={{ mw: "400px" }}
-                isHoverable
-                isPressable
-                onClick={() => {
-                  window.location.href = item.redirect;
-                }}
-              >
-                <Card.Header>
-                  <Image
-                    alt={item.title}
-                    src={item.img}
-                    width="55px"
-                    height="55px"
-                  />
-                  <Grid.Container css={{ pl: "$6" }}>
-                    <Grid xs={12}>
-                      <Text h4 css={{ lineHeight: "$xs" }}>
-                        {item.title}
-                      </Text>
-                    </Grid>
-                    <Grid xs={12}>
-                      <Text css={{ color: "$accents8" }}>{item.sub_title}</Text>
-                    </Grid>
-                  </Grid.Container>
-                </Card.Header>
-                <Card.Body css={{ py: "$2" }}>
-                  <Text>{item.read_me}</Text>
-                </Card.Body>
-                <Card.Footer>
-                  <Row>
-                    <Button
-                      flat
-                      auto
-                      rounded
-                      css={{ color: "#94f9f0", bg: "#94f9f026" }}
-                    >
-                      {" "}
-                      <Link
-                        icon
-                        color="primary"
-                        target="_blank"
-                        href={item.url_link}
-                      >
-                        {item.url_title}
-                      </Link>
-                    </Button>
+        <Col>
+          <Grid.Container gap={2} justify="flex-start">
+            {list.map((item, index) => (
+              <Grid xs={12} sm={6} md={4} key={index}>
+                <Card
+                  css={{ w: "100%", h: "400px" }}
+                  isHoverable
+                  isPressable
+                  variant="bordered"
+                  //onClick={() => {
+                  //  window.location.href = item.redirect;
+                  //}}
+                >
+                  <Card.Body css={{ p: 0 }}>
+                    <Card.Image
+                      src={item.img}
+                      width="100%"
+                      height="100%"
+                      objectFit="cover"
+                      alt="Card example background"
+                    />
+                  </Card.Body>
 
-                    <Text
-                      flat
-                      auto
-                      rounded
-                      css={{ color: "#94f9f0", margin: "5px" }}
-                    >
-                      {" "}
-                      <Link
-                        icon
-                        color="primary"
-                        target="_blank"
-                        href={item.url_link}
-                      >
-                        {item.url_title}
-                      </Link>
-                    </Text>
-
-                    <Text
-                      flat
-                      auto
-                      rounded
-                      css={{ color: "#94f9f0", margin: "5px" }}
-                    >
-                      {" "}
-                      <Link
-                        icon
-                        color="default"
-                        target="_blank"
-                        href={item.url_link}
-                      >
-                        {item.url_title}
-                      </Link>
-                    </Text>
-                  </Row>
-                </Card.Footer>
-              </Card>
-            </Grid>
-          ))}
-        </Grid.Container>
+                  <Card.Footer
+                    isBlurred
+                    css={{
+                      position: "absolute",
+                      bgBlur: "#ffffff66",
+                      borderTop:
+                        "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                      bottom: 0,
+                      zIndex: 1,
+                    }}
+                  >
+                    <Row>
+                      <Col>
+                        <Text color="#000" size={12}>
+                          {item.title}
+                        </Text>
+                        <Text color="#000" size={12}>
+                          {item.sub_title}
+                        </Text>
+                      </Col>
+                      <Col>
+                        <Row justify="flex-end">
+                          <Button
+                            flat
+                            auto
+                            rounded
+                            color="secondary"
+                            size="sm"
+                            onClick={() => {
+                              window.location.href = item.redirect;
+                            }}
+                          >
+                            <Text css={{ color: "inherit" }}>download</Text>
+                          </Button>
+                        </Row>
+                      </Col>
+                    </Row>
+                  </Card.Footer>
+                </Card>
+              </Grid>
+            ))}
+          </Grid.Container>
+        </Col>
       </Container>
 
       <Spacer y={1} />

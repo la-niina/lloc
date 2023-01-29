@@ -1,10 +1,12 @@
 import Head from "next/head";
 import React from "react";
+import { Inter } from "@next/font/google";
 import {
   Navbar,
   Button,
-  Image,
+  useModal,
   Link,
+  Image,
   Text,
   useTheme,
   Avatar,
@@ -14,47 +16,28 @@ import {
   Row,
   Checkbox,
 } from "@nextui-org/react";
-import { Layout } from "../compose/Navbar/Layout.js";
+import { Layout } from "../compose/audiobooks/AudioLayout.js";
 import { Mail } from "../compose/LoginModel/Mail";
 import { Password } from "../compose/LoginModel/Password";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-  onAuthStateChanged,
-  signOut,
-} from "firebase/auth";
-import firebase from "../compose/firebase";
 
-export default function Home() {
+export default function Audio() {
   const { isDark } = useTheme();
 
+  const collapseItems = ["features", "community", "blog", "liencies", "about"];
   const [visible, setVisible] = React.useState(false);
   const handler = () => setVisible(true);
   const closeHandler = () => {
     setVisible(false);
     console.log("closed");
   };
-
-  const auth = getAuth(firebase);
-  const emailpasswordAuth = () =>
-    signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-      });
-  const logOut = () => signOut(auth);
-
   return (
     <>
       <Head>
-        <title>lloc | Home</title>
+        <title>lloc | Audio</title>
         <meta
           name="description"
           content="lloc is a start-up software company that provides a multitude of
-services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc."
+services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development etc.  "
         />
         <meta
           name="keywords"
@@ -88,21 +71,21 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
           <Navbar.Content
             enableCursorHighlight
             activeColor="secondary"
-            color="gradient"
             hideIn="xs"
             variant="underline"
           >
-            <Navbar.Link isActive href="/">
-              features
+            <Navbar.Link href="/">features</Navbar.Link>
+
+            <Navbar.Link isActive href="/blog">
+              blog
             </Navbar.Link>
-            <Navbar.Link href="/blog">blog</Navbar.Link>
             <Navbar.Link href="/courses">courses</Navbar.Link>
             <Navbar.Link href="/liences">liences</Navbar.Link>
             <Navbar.Link href="/about">about</Navbar.Link>
           </Navbar.Content>
-          <Navbar.Toggle showIn="xs" />
 
-          <Navbar.Content
+          <Navbar.Toggle showIn="xs" />
+           <Navbar.Content
             css={{
               "@xs": {
                 w: "12%",
@@ -135,7 +118,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                   </Text>
                 </Dropdown.Item>
                 <Dropdown.Item key="settings" withDivider>
-                  cloud server
+                  My Settings
                 </Dropdown.Item>
                 <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
                 <Dropdown.Item key="analytics" withDivider>
@@ -181,7 +164,6 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 fullWidth
                 color="primary"
                 size="lg"
-                id="email"
                 placeholder="Email"
                 contentLeft={<Mail fill="currentColor" />}
               />
@@ -191,7 +173,6 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                 fullWidth
                 color="primary"
                 size="lg"
-                id="pwsd"
                 placeholder="Password"
                 contentLeft={<Password fill="currentColor" />}
               />
@@ -216,7 +197,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
             <Navbar.CollapseItem>
               <Link
                 weight="bold"
-                css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}
+                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
                 href="/"
               >
                 features
@@ -227,24 +208,21 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
               <Link
                 weight="bold"
                 css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
-                onClick={() => {
-                  window.location.href = "/community";
-                }}
+                href="/community"
               >
-                plugin
+                community
               </Link>
             </Navbar.CollapseItem>
 
-             <Navbar.CollapseItem>
+            <Navbar.CollapseItem>
               <Link
                 weight="bold"
-                css={{ textGradient: "45deg, $purple600 -20%, $pink600 100%" }}
+                css={{ textGradient: "45deg, $yellow600 -20%, $red600 100%" }}
                 href="/blog"
               >
                 blog
               </Link>
             </Navbar.CollapseItem>
-
 
             <Navbar.CollapseItem>
               <Link
