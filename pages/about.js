@@ -119,7 +119,7 @@ services | Android, iOS, Windows ,Linux, Mac os, Web Applications Development et
                   </Text>
                 </Dropdown.Item>
                 <Dropdown.Item key="settings" withDivider>
-                  My Settings
+                  LLoc Cloud Platform
                 </Dropdown.Item>
                 <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
                 <Dropdown.Item key="analytics" withDivider>
